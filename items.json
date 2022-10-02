@@ -1,0 +1,42 @@
+{
+    "music":[
+        {
+            "id": 1,
+            "name": "Album 1",
+            "price": 1299,
+            "imgName": "Album_1.png"
+        },
+        {
+            "id": 2,
+            "name": "Album 2",
+            "price": 1499,
+            "imgName": "Album_2.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Album 3",
+            "price": 999,
+            "imgName": "Album_3.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Album 4",
+            "price": 1999,
+            "imgName": "Album_4.jpg"
+        }
+    ],
+    "merch":[
+        {
+            "id": 5,
+            "name": "T-Shirt",
+            "price": 1299,
+            "imgName": "T_Shirt.jpg"
+        },
+        {
+            "id": 6,
+            "name": "Mug",
+            "price": 1299,
+            "imgName": "Mug.jpg"
+        }
+    ]
+}
