@@ -55,7 +55,9 @@ app.get('/store', function(req, res){
 
 
 //listen in on a port 
-app.listen(3000)
+app.listen(5050)
+
+console.log("http://localhost:5050")
 
 
 

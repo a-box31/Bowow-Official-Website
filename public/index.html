@@ -16,41 +16,37 @@
         <meta name="description" content="Coming Soon: listen to Bowow's new single">
 
         <link href="styles.css" rel="stylesheet">
-
+        <script src="index.js" defer></script>
+        
 
     </head>
 
     <body>
 
 
-        <header class="main-header">
-
-
-            <!--navigation area: can have multiple of these in a single page-->
-            <nav class="nav main-nav">
-                <!-- unordered list also can have ordered list (ol) -->
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="store">STORE</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                </ul>
+        <section class="main-header">
+            <!-- <img src="media/menu-icon.png" class="menu-icon"> -->
+            <nav class="navbar">
+                <div class="band-name band-name-large"> Bowow </div>
+                <a href="#" class="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+                <div class = "navbar-links">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Store</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </div>
             </nav>
-            
 
-            <!-- heading elements range from 1-6 from largest to smallest-->
-            <h1 class="band-name band-name-large">Bowow</h1>
-            
             <div class="container">
-                <!-- button elements are single line elements-->
-                <button class="btn btn-header" type="button">Get Our Latest Single</button>
-                <!-- using line break elements, single line elements can be split-->
-
-
-                <!-- &#9658 is a play symbol that is put on a button tag-->
                 <button class="btn btn-header play-btn" type="button">&#9658</button>
             </div>
 
-        </header>
+        </section>
 
 
         <section class="content-section container">
@@ -100,6 +96,7 @@
                     <button type = "button" class="btn tour-item tour-btn btn-primary">BUY TICKETS</button>
                 </div>
             </div>
+
         </section>
 
 
@@ -133,7 +130,6 @@
                 </ul>
 
             </div>
-            
         </footer>
 
 
