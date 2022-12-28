@@ -52,10 +52,11 @@ html, body{
     /*
     some html elements have default paddings
     these were removed to make the heading look better
-     */
+    */
     margin: 0;
     padding: 0;
 
+    overflow-x: hidden;
 }
 
 
@@ -73,26 +74,22 @@ html, body{
 
 
 
-
+/* footer styles */
 
 .nav ul {
-
     /* 
     Gets rid of margin at the top because nav is first element and should
     only be the nav with a list in it
     */
     margin: 0; 
-
 }
 
 .nav li {
     /* the navigation list elements should be displayed in line */
-    display: inline
-
+    display: inline;
 }
 
 .nav a {
-
     /* 
     navigation links should be padded (this only pads to the left and right and 
     not the top and bottom because it is an inline element)
@@ -106,33 +103,27 @@ html, body{
     */
     display: inline-block;
 
-
     color: white;
 
     /* gets rid of the link-looking underlines */
     text-decoration: none;
-
 }
 
 /* This is the hover selector used on the nav's anchor tags */
 .nav a:hover {
     /* elements with this tag should have their box-model change color */
     /* should be transparent to still view the background picture */
-    background-color: rgba(255,255,255,.3)
+    background-color: rgba(255,255,255,.3);
 }
 
 .main-nav {
     /* main navigation should be at the center of the screen */
     text-align: center;
-
     /* size of text should be scaled 30% bigger than the b */
     font-size: 1.3em;
-
     /* font blends well with the background as opposed to bolder */
     font-weight: lighter;
-
     /* Adds a border bottom to section off the navigation links */
-    
 }
 
 .main-nav li {
@@ -209,6 +200,13 @@ html, body{
 	background-color: white;
 	border-radius: 10px;
 }
+
+
+
+
+
+
+
 
 @media (max-width: 1350px){
 	.toggle-button {
@@ -378,7 +376,7 @@ html, body{
     auto-set the left and right margins for better fitting 
     (ie. centers the text to the screen)
     */
-    margin: 0 auto;
+    /* margin: 0 auto; */
 
     /* 
     ensures that even if the page is as small as possible there is a padding
