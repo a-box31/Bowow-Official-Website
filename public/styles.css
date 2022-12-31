@@ -18,6 +18,7 @@ If loading from a computer:
 }
 */
 
+
 @font-face {
     font-family: Sound Wave;
     src: url("Fonts/Sound_Wave_Font.ttf");
@@ -25,7 +26,6 @@ If loading from a computer:
     font-weight: normal;
     font-style: normal;
 }
-
 
 
 * {
@@ -58,6 +58,8 @@ html, body{
 
     overflow-x: hidden;
 }
+
+
 
 
 
@@ -116,177 +118,6 @@ html, body{
     background-color: rgba(255,255,255,.3);
 }
 
-.main-nav {
-    /* main navigation should be at the center of the screen */
-    text-align: center;
-    /* size of text should be scaled 30% bigger than the b */
-    font-size: 1.3em;
-    /* font blends well with the background as opposed to bolder */
-    font-weight: lighter;
-    /* Adds a border bottom to section off the navigation links */
-}
-
-.main-nav li {
-    /* 
-    navigation links should have a 5% padding so they are spaced out as the
-    window grows or shrinks
-    */
-    padding: 0 5%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* -------------------------------------------------------------------------- */
-
-.navbar{
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-end;
-	border-bottom: 1px solid rgba(255, 255, 255, .3)
-}
-
-.toggle-button{
-	position: absolute;
-	top: 3rem;
-	right: 3rem;
-	display: none;
-	flex-direction: column;
-	justify-content: space-between;
-	width: 30px;
-	height: 22px;
-}
-
-.toggle-button .bar {
-	height: 3px;
-	width: 100%;
-	background-color: white;
-	border-radius: 10px;
-}
-
-
-
-
-
-
-
-
-@media (max-width: 1350px){
-	.toggle-button {
-		display: flex;
-	}
-	.navbar-links {
-		display: none;
-		width: 100%;
-	}
-
-	.navbar {
-		flex-direction: column;
-		align-items: flex-start;
-	}
-
-	.navbar-links ul{
-		flex-direction: column;
-		width: 100%;
-	}
-
-	.navbar-links li {
-		border-top: 1px solid rgba(255, 255, 255, .3);
-		text-align: center;
-	}
-
-	.navbar-links li a {
-		padding: 0.5rem 1rem;
-	}
-
-	.navbar-links.active {
-		display: flex;
-	}
-}
-
-
-.navbar-links ul{
-	margin:0;
-	padding:0;
-	display: flex;
-}
-
-.navbar-links li{
-	list-style: none;
-}
-
-.navbar-links li a {
-	text-decoration: none;
-	color: #fff;
-	padding: 2rem;
-	display: block;
-	font-size: 2em;
-}
-
-.navbar-links li:hover {
-	background-color: rgba(255, 255, 255, 0.5)
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -330,6 +161,9 @@ html, body{
 
 }
 
+
+
+
 .band-name {
 
     /* class for band name: should be centered wherever it is */
@@ -355,6 +189,14 @@ html, body{
 
 .band-name-large {
     font-size: 5em;
+}
+
+
+.content-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -397,7 +239,23 @@ html, body{
 }
 
 
-.about-logo-image{
+.album {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #290133;
+}
+
+#cocktail-beach {
+    width: 100%;
+}
+
+.controls {
+    
+}
+
+.about-logo-image {
     /* 
     trying to get the page to wrap around the image...
     by using the float property, we can make the image stay left while the
@@ -471,277 +329,3 @@ html, body{
     height: 30px;
 }
 
-
-
-/* generic button class */
-.btn {
-    /* button should have text that is centered horizontally (usually after padding) */
-    text-align: center;
-
-    /* button should have text that is centered vertically (usually after padding) */
-    vertical-align: middle;
-
-    /* padding will make buttons bigger */
-    padding: .67em;
-
-    cursor: pointer;
-}
-
-.btn-header {
-    /* want to off center the header button to the left to an extent*/
-    /* if we use all 4 values of the margin property: top, right, bottom, left */
-    margin: .5em 30% 2em 15%;
-
-    /* changing the look of the button: color, border, background color */
-    color: white;
-    border: 2px solid white;
-    background-color: rgba(255,255,255,.1);
-
-    /* makes sure that the this button isn't round on corners */
-    border-radius: 0;
-
-    font-size: 1.5em;
-    font-weight: lighter;
-    padding-left: 2em;
-    padding-right: 2em;
-}
-
-/* to change colors when hovered over */
-.btn-header:hover {
-    background-color: rgba(255, 255, 255, .3);
-}
-
-
-.play-btn {
-    display: block;
-    margin: 20px auto;
-    color:white;
-    font-size: 4em;
-    border-radius: 50%;
-    padding: 0;
-    height: 100px;
-    width: 100px;
-    
-}
-
-.tour-row {
-    border-bottom: 1px solid;
-    padding-bottom: 1em;
-    margin-bottom: 1em;
-}
-
-.tour-row:last-child {
-    border-bottom: none;
-}
-
-.tour-item {
-    /* 
-    To add padding to the top and bottom or add heights, you have to make it a 
-    inline block because blocks are two dimensional while lines only have a 
-    width
-    */
- 
-   display: inline-block;
-   padding-right: .5em;
-}
-
-
-/* 
-Inline block elements add a width to the block that can't be removed
-the solution is to add up all the percentages, divide each accordingly, then 
-subtract out an estimated portion from these widths to make sure to account for
-the block element's extra width
-*/
-.tour-date {
-    color:#555;
-    font-weight: bold;
-    width: 11%;
-}
-
-.tour-city {
-    width: 24%;
-}
-
-.tour-arena {
-    width: 42%;
-}
-
-.tour-btn {
-    max-width: 19%;
-}
-
-.btn-primary {
-    color:white;
-    background-color:#290133;
-    border: none;
-    border-radius: 0.3em;
-    font-weight: normal;
-}
-
-.btn-primary:hover {
-    background-color: #CF9FFF;
-}
-
-.shop-item {
-    margin: 30px;
-}
-
-.shop-item-title {
-    /* creates its own block/line rather than inline */
-    display: block;
-
-    width: 100%;
-    text-align: center;
-    font-size: 1.5em;
-    color: #333;
-    margin-bottom: 15px;
-}
-
-.shop-item-image {
-    height: 250px;
-
-}
-
-.shop-item-details {
-    /* want a flexbox so we can align the items inside this class vertically */
-    display: flex;
-    align-items: center;
-    padding: 5px;
-}
-
-
-.shop-item-price {
-    flex-grow: 1;
-    color: #333;
-}
-
-
-.shop-items {
-    /*
-    makes everything inside the flexbox aligned
-    */
-    display: flex;
-
-    /* 
-    everything inside the flex will wrap around if there
-    is no space for it 
-    */
-   flex-wrap: wrap;
-
-   /* making sure that there is space to the left and right*/
-   justify-content: space-around;
-
-}
-
-
-.cart-header {
-    font-weight: bold;
-    font-size: 1.25em;
-    color: #333;
-}
-
-.cart-column {
-    /* vertically spacing the columns in the middle (equally)*/
-    display: flex;
-    align-items: center;
-
-    /* drawing a line to separate the heading from the rest of the column */
-    border-bottom: 1px solid black;
-
-    /* margins to separate the columns from each other */
-    margin-right: 1.5em;
-
-    /* seperating items in a column */
-    padding-bottom: 10px;
-
-    /* separating the column from everything above it */
-    margin-top: 10px;
-}
-
-.cart-row {
-    display: flex;
-}
-
-.cart-item {
-    width: 45%;
-}
-
-.cart-price {
-    width:20%;
-    font-size: 1.2em;
-    color: #333;
-}
-
-.cart-quantity {
-    width: 35%
-}
-
-.cart-item-title {
-    color:#333;
-    margin-left: .5em;
-    font-size: 1.2em;
-}
-
-.cart-item-image {
-    width: 75px;
-    height: auto;
-    border-radius: 10px;
-    border: solid #333;
-}
-
-.btn-danger {
-    color:white;
-    background-color: #EB5757;
-    border: none;
-    font-weight: bold;
-    border-radius: 10px;
-}
-
-.btn-danger:hover {
-    background-color: #CC4C4C;
-}
-
-.cart-quantity-input {
-    height: 34px;
-    width: 50px;
-    border-radius: 5px;
-    border: 1px solid;
-    background-color: #eee;
-    color: #333;
-    padding: 0;
-    text-align: center;
-    font-size: 1.1em;
-}
-
-.cart-row:last-child {
-    border-bottom: 1px solid black;
-}
-
-.cart-row:last-child .cart-column {
-    border: none;
-}
-
-.cart-total {
-    text-align: end;
-    margin-top:10px;
-    margin-right: 10px;
-}
-
-.cart-total-title {
-    font-weight: bold;
-    font-size: 1.5em;
-    color: black;
-    margin-right: 20px;
-    margin-top: 10px;
-}
-
-.cart-total-price {
-    color: #333;
-    font-size: 1.1em;
-}
-
-.btn-purchase {
-    display: block;
-    margin: 40px auto 80px auto;
-    font-size: 1.75em;
-}
