@@ -21,8 +21,7 @@ If loading from a computer:
 
 @font-face {
     font-family: Sound Wave;
-    src: url("/Fonts/Sound_Wave_Font.ttf") format('truetype');
-
+    src: url("../Bowow-Official-Website/Sound_Wave_Font.ttf") format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -142,7 +141,7 @@ html, body{
 .main-header {
 
     /* sets the background with the url function (similar to href)*/
-    background-image: url("/Images/header_background.jpg") format('truetype');
+    background-image: url("header_background.jpg");
 
     /* back-background color for overlaying image over*/
     background-color: rgba(0,0,0,.6);
@@ -158,7 +157,6 @@ html, body{
 
     /*Setting the bottom padding so Title isn't sitting on top of white-space */
     padding-bottom: 50px;
-
 }
 
 
