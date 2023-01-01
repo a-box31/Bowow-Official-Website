@@ -75,6 +75,51 @@ html, body{
 
 
 
+
+
+.main-footer {
+    /* Background color should be white */
+    background-color: #290133;
+
+    /* Anything else should be white */
+    color: white;
+
+    /* padding should be for top and bottom */
+    padding: .25em 0;
+
+    /* display: flex;
+    justify-content: center; */
+}
+
+.main-footer-container {
+    /* flex display/flex-box is a complicated display tool*/
+    display: flex;
+    /* Vertically aligns everything in the flex-box */
+    align-items: center;
+}
+
+/* makes a flex-grows the list of */
+.main-footer-container ul {
+    /*
+    left element should be as small as possible (ul elements)  
+    1 - means grow and push everything to the right
+    */
+    flex-grow: 1;
+    /* should be toward the right end */
+    text-align: end;
+}
+
+/* footer list should have padding around*/
+.footer-nav li {
+    padding: 0 .5em;
+}
+
+/* footer navigation images ex. youtube, spotify, etc logos */
+.footer-nav img {
+    /* if images were not sized already you cn set the height and width */
+    height: 30px;
+}
+
 /* footer styles */
 
 .nav ul {
@@ -116,8 +161,6 @@ html, body{
     /* should be transparent to still view the background picture */
     background-color: rgba(255,255,255,.3);
 }
-
-
 
 
 
@@ -185,6 +228,7 @@ html, body{
     color: white;
 }
 
+
 .band-name-large {
     font-size: 5em;
 }
@@ -244,6 +288,40 @@ html, body{
     align-items: center;
     background-color: #290133;
 } */
+
+
+.about-logo-image {
+    /* 
+    trying to get the page to wrap around the image...
+    by using the float property, we can make the image stay left while the
+    entire page wraps around it
+    image removes itself from the flow and "floats" left of the page
+    */
+    float: left;
+
+    /* Setting the height and width of the images */
+    height: 200px;
+    width: 200px;
+
+    /* setting a little margin so the text doesn't hug the picture*/
+    margin: 15px;
+
+    /*
+    making the image rounded so the it sticks out more
+    It is a property on how far we want to curve the edges of the border
+    Since the image is square, 50% is the side that is shortest, taking that 
+    it will vector out a circle
+    */
+    border-radius: 50%;
+
+    /* 
+    creating a border around the circle so that the white-background image can
+    be seen as a circle 
+    */
+    border: 3px solid ;
+}
+
+
 
 
 .audio-player{
@@ -356,78 +434,11 @@ html, body{
 
 
 
-
-.about-logo-image {
-    /* 
-    trying to get the page to wrap around the image...
-    by using the float property, we can make the image stay left while the
-    entire page wraps around it
-    image removes itself from the flow and "floats" left of the page
-    */
-    float: left;
-
-    /* Setting the height and width of the images */
-    height: 200px;
-    width: 200px;
-
-    /* setting a little margin so the text doesn't hug the picture*/
-    margin: 15px;
-
-    /*
-    making the image rounded so the it sticks out more
-    It is a property on how far we want to curve the edges of the border
-    Since the image is square, 50% is the side that is shortest, taking that 
-    it will vector out a circle
-    */
-    border-radius: 50%;
-
-    /* 
-    creating a border around the circle so that the white-background image can
-    be seen as a circle 
-    */
-    border: 3px solid ;
+.no-highlight {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
-
-.main-footer {
-    /* Background color should be white */
-    background-color: #290133;
-
-    /* Anything else should be white */
-    color: white;
-
-    /* padding should be for top and bottom */
-    padding: .25em 0;
-}
-
-.main-footer-container {
-    /* flex display/flex-box is a complicated display tool*/
-    display: flex;
-
-    /* Vertically aligns everything in the flex-box */
-    align-items: spaced-apart;
-}
-
-/* makes a flex-grows the list of */
-.main-footer-container ul {
-    /*
-    left element should be as small as possible (ul elements)  
-    1 - means grow and push everything to the right
-    */
-    flex-grow: 1;
-
-    /* should be toward the right end */
-    text-align: end;
-}
-
-/* footer list should have padding around*/
-.footer-nav li {
-    padding: 0 .5em;
-}
-
-
-/* footer navigation images ex. youtube, spotify, etc logos */
-.footer-nav img {
-    /* if images were not sized already you cn set the height and width */
-    height: 30px;
-}
-
