@@ -405,6 +405,19 @@ html, body{
     align-items: center;
 
     margin: 10px;
+    padding: 5px;
+    background-color: #21003b;
+}
+
+.track-list li:hover {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    margin: 10px;
+    padding: 5px;
+    background-color: #34005b;
+    transform: scale(1.1);
 }
 
 .track-list img {
