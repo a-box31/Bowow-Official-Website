@@ -13,145 +13,179 @@
         <!-- description of the page when searched for in -->
         <!-- google search results -->
         <meta name="description" content="Coming Soon: listen to Bowow's new single">
-        <link href="styles.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet" defer>
         <script src="index.js" defer></script>
     </head>
 
+
+
+
     <body>
 
-        <header class="main-header">
-            <!-- <img src="media/menu-icon.png" class="menu-icon"> -->
-            <div class="band-name band-name-large no-highlight"> Bowow </div>
-        </header>
+        <div class="wrapper">
 
-        <div class="content-area">
+
+            <!-- navigation bar fixed the top -->
+            <div class="nav-container">
+                <div class="navigation">
+                    <div class="logo">
+                        <a href="#">
+                            <img  class = "nav-logo" src="../Images/Assets/profile_pic.JPG" style="width: 50px;">
+                        </a>
+                    </div>
+                    <div class="navbar-links">
+                        <nav>
+                            <ul>
+                                <li>Home</li>
+                                <li>Services</li>
+                                <li>Network</li>
+                            </ul>
+                        </nav>
+                    </div>  
+                </div>
+            </div>
+
+
+
             
-            <!-- section element to partition related elements-->
-            <section class="content-section container no-highlight">
+            <header>
+                <img class="background" src="../Images/Assets/sound-wave.gif" alt="Background">
+            </header>
 
-                <h2 class="section-header">Portfolio</h2>
 
-                <!--
-                    image tag is empty and asks for source(src) from the relative
-                    page you wish to pull from ie Images folder
-                -->
-                <img  class = "about-logo-image" src="profile_pic.JPG">
 
-                <!--paragraph element: many sentences-->
-                <p>
-                    Bowow is a electronic music producer and DJ 
-                    from New City, New York. The solo creator started in 2016
-                    as a melodic, bass-boosted, EDM, fan in High School going on to 
-                    study music and sound recording at the University of New Haven.
-                </p>
 
-                <p> 
-                    Inspired by creators such as Avicii, David Guetta, Kygo, and Cash 
-                    Cash, he created a unique brand of entertainment, fusing melodic, 
-                    vibing tunes with a variety of fun instrumentals that 
-                    will get you to be in high spirits. With an award winning 
-                    portfolio and a bright future, he continues to hone his music 
-                    production. He uses industry standard music DAWs, synthesizes 
-                    new sounds, and is in touch with up and coming artists to create 
-                    a unique feel for his music. Always bringing his talent to the 
-                    table, he is welcoming singers, rappers, and the like to work 
-                    with him. Knowing the best songs are a combination of the music, 
-                    voice, and message, he brings the best out of the songs he is on. 
-                    Coming soon is his new single.  For the foreseeing future, 
-                    he plans to release a series of singles. Each calling upon
-                    aspects of good music. Up for a challenge? He can throw down in 
-                    beat box battles or collaborate with rappers to bring the best 
-                    out of everyone. This is the core of his music. To call on the 
-                    musical spirit of the the crowd. He looks forward to his career
-                    DJing this kind of music. Remember his name. 
-                </p>
+            <div class="content-area">
+
+                <section class="title-section">
+                    <div class="band-name band-name-large no-highlight"> Bowow </div>
+                </section>
+
                 
-            </section>
+                <!-- section element to partition related elements-->
+                <section class="content-section container no-highlight">
+
+                    <h2 class="section-header">Portfolio</h2>
+
+                    <img  class = "about-logo-image" src="../Images/Assets/profile_pic.JPG">
+                    <p>
+                        Bowow is a electronic music producer and DJ 
+                        from New City, New York. The solo creator started in 2016
+                        as a melodic, bass-boosted, EDM, fan in High School going on to 
+                        study music and sound recording at the University of New Haven.
+                    </p>
+
+                    <p> 
+                        Inspired by creators such as Avicii, David Guetta, Kygo, and Cash 
+                        Cash, he created a unique brand of entertainment, fusing melodic, 
+                        vibing tunes with a variety of fun instrumentals that 
+                        will get you to be in high spirits. With an award winning 
+                        portfolio and a bright future, he continues to hone his music 
+                        production. He uses industry standard music DAWs, synthesizes 
+                        new sounds, and is in touch with up and coming artists to create 
+                        a unique feel for his music. Always bringing his talent to the 
+                        table, he is welcoming singers, rappers, and the like to work 
+                        with him. Knowing the best songs are a combination of the music, 
+                        voice, and message, he brings the best out of the songs he is on. 
+                        Coming soon is his new single.  For the foreseeing future, 
+                        he plans to release a series of singles. Each calling upon
+                        aspects of good music. Up for a challenge? He can throw down in 
+                        beat box battles or collaborate with rappers to bring the best 
+                        out of everyone. This is the core of his music. To call on the 
+                        musical spirit of the the crowd. He looks forward to his career
+                        DJing this kind of music. Remember his name. 
+                    </p>
+                    
+                </section>
 
 
-            <section class="content-section container no-highlight">
-                <h2 class="section-header">Songs</h2>
+                <section class="content-section container no-highlight">
+                    <h2 class="section-header">Songs</h2>
 
-                <div class="track-player-container">
+                    <div class="track-player-container">
 
-                    <div class="player-container">
-                        <div class="album">
-                            <div class="audio-player">
-                                <div class="song-header">Cocktail Beach</div>
-                                <div class="icon-container">
-                                    <img class="audio-icon" src="/Images/Covers/cocktail_beach_cover.jpg" alt="Cocktail Beach">
-                                    <audio src="/Songs/Cocktail_Beach.mp3"></audio>
-                                </div>
-                                <div class="controls">
-                                    <button class="player-button">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#3D3132">
-                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
-                                        </svg>
-                                    </button>
-                                    <input type="range" class="timeline" max="100" value="0">
-                                    <button class="sound-button">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#3D3132">
-                                            <path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM14.657 2.929a1 1 0 011.414 0A9.972 9.972 0 0119 10a9.972 9.972 0 01-2.929 7.071 1 1 0 01-1.414-1.414A7.971 7.971 0 0017 10c0-2.21-.894-4.208-2.343-5.657a1 1 0 010-1.414zm-2.829 2.828a1 1 0 011.415 0A5.983 5.983 0 0115 10a5.984 5.984 0 01-1.757 4.243 1 1 0 01-1.415-1.415A3.984 3.984 0 0013 10a3.983 3.983 0 00-1.172-2.828 1 1 0 010-1.415z" clip-rule="evenodd" />
-                                        </svg>
-                                    </button>
+                        <div class="player-container">
+                            <div class="album">
+                                <div class="audio-player">
+                                    <div class="song-header">Cocktail Beach</div>
+                                    <div class="icon-container">
+                                        <img class="audio-icon" src="/Images/Covers/cocktail_beach_cover.jpg" alt="Cocktail Beach">
+                                        <audio src="/Songs/Cocktail_Beach.mp3"></audio>
+                                    </div>
+                                    <div class="controls">
+                                        <button class="player-button">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#3D3132">
+                                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                                            </svg>
+                                        </button>
+                                        <input type="range" class="timeline" max="100" value="0">
+                                        <button class="sound-button">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#3D3132">
+                                                <path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM14.657 2.929a1 1 0 011.414 0A9.972 9.972 0 0119 10a9.972 9.972 0 01-2.929 7.071 1 1 0 01-1.414-1.414A7.971 7.971 0 0017 10c0-2.21-.894-4.208-2.343-5.657a1 1 0 010-1.414zm-2.829 2.828a1 1 0 011.415 0A5.983 5.983 0 0115 10a5.984 5.984 0 01-1.757 4.243 1 1 0 01-1.415-1.415A3.984 3.984 0 0013 10a3.983 3.983 0 00-1.172-2.828 1 1 0 010-1.415z" clip-rule="evenodd" />
+                                            </svg>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
+                        <div class="track-container">
+                            <h3 class="tracklist-title">Tracklist</h3>
+                            <ul class="track-list">
+                                <li>
+                                    <img src="./Images/Covers/cocktail_beach_cover.jpg">
+                                    <div class="song-header">Cocktail Beach</div>
+                                </li>
+                                <li>
+                                    <img src="./Images/Covers/Bounce.jpg">
+                                    <div class="song-header">Bounce</div>
+                                </li>
+                                <li>
+                                    <img src="./Images/Covers/summer_drip_cover.jpg">
+                                    <div class="song-header">Summer Drip</div>
+                                </li>
+                            </ul>
+                        </div>
+
                     </div>
 
-                    <div class="track-container">
-                        <h3 class="tracklist-title">Tracklist</h3>
-                        <ul class="track-list">
-                            <li>
-                                <img src="./Images/Covers/cocktail_beach_cover.jpg">
-                                <div class="song-header">Cocktail Beach</div>
-                            </li>
-                            <li>
-                                <img src="./Images/Covers/Bounce.jpg">
-                                <div class="song-header">Bounce</div>
-                            </li>
-                            <li>
-                                <img src="./Images/Covers/summer_drip_cover.jpg">
-                                <div class="song-header">Summer Drip</div>
-                            </li>
-                        </ul>
-                    </div>
+                </section>
 
+            </div>
+            
+            <footer class="main-footer">
+                <div class="main-footer-container">
+                    <h3 class = "band-name no-highlight"> Bowow </h3>
+                    <ul class="nav footer-nav">
+                        <li class="no-highlight">
+                            <a href="https://www.youtube.com/channel/UCuXSuzae1gH6HCu9oUE9Z3g/featured">
+                                <img src="./Images/Socials/Youtube.png">
+                            </a>
+                        </li>
+                        <li class="no-highlight">
+                            <a href="https://open.spotify.com/user/bowow_0923?si=6fedad7e452a4646">
+                                <img src="./Images/Socials/Spotify.png">
+                            </a>
+                        </li>
+                        <li class="no-highlight">
+                            <a href="https://soundcloud.com/bowow2478">
+                                <img src="./Images/Socials/Sound Cloud.png">
+                            </a>
+                        </li>
+                        <li class="no-highlight">
+                            <a href="https://www.instagram.com/bowow_0923/">
+                                <img src="./Images/Socials/Instagram.png">
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-
-            </section>
+            </footer>
 
         </div>
-        
-        <footer class="main-footer">
-            <div class="main-footer-container">
-                <h3 class = "band-name no-highlight"> Bowow </h3>
-                <ul class="nav footer-nav">
-                    <li class="no-highlight">
-                        <a href="https://www.youtube.com/channel/UCuXSuzae1gH6HCu9oUE9Z3g/featured">
-                            <img src="./Images/Socials/Youtube.png">
-                        </a>
-                    </li>
-                    <li class="no-highlight">
-                        <a href="https://open.spotify.com/user/bowow_0923?si=6fedad7e452a4646">
-                            <img src="./Images/Socials/Spotify.png">
-                        </a>
-                    </li>
-                    <li class="no-highlight">
-                        <a href="https://soundcloud.com/bowow2478">
-                            <img src="./Images/Socials/Sound Cloud.png">
-                        </a>
-                    </li>
-                    <li class="no-highlight">
-                        <a href="https://www.instagram.com/bowow_0923/">
-                            <img src="./Images/Socials/Instagram.png">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </footer>
-
 
     </body>
+
+
+
 
 </html>

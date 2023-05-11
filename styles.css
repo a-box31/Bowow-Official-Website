@@ -21,7 +21,7 @@ If loading from a computer:
 
 @font-face {
     font-family: Sound Wave;
-    src: url("../Bowow-Official-Website/Sound_Wave_Font.ttf") format('truetype');
+    src: url("../Fonts/Sound_Wave_Font.ttf") format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -38,6 +38,8 @@ If loading from a computer:
     without it the total area would be 240px
     */
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     /* font family (default font to be used )*/
     font-family: Russo One;
     color: #777;
@@ -58,8 +60,76 @@ html, body{
 }
 
 
+.wrapper {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+}
 
 
+.nav-container {
+    margin: 0 auto;
+    height: 100px;
+    width: 100vw;
+    z-index: 13;
+    position: sticky;
+    top: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.navigation {
+    display: flex;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    width: 50%;
+    margin-left: 5%;
+}
+
+.logo img {
+    border-radius: 100%;
+    border: solid 2px gray;
+}
+
+.navbar-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 50%;
+    /* background-color: #21003b; */
+}
+
+.navbar-links nav{
+    width: 100%;
+    /* background-color: #57006d; */
+}
+
+.navbar-links ul {
+    display: flex;
+
+    height: 100%;
+}
+
+.navbar-links li {
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+    list-style: none;
+}
+
+.is-scrolling {
+    background-color: none transparent;
+}
 
 
 
@@ -73,22 +143,22 @@ html, body{
 
 /* HEADER STYLING */
 /* -------------------------------------------------------------------------- */
-
-.main-header {
-    /* sets the background with the url function (similar to href)*/
-    background-image: url("header_background.jpg");
-    /* back-background color for overlaying image over*/
-    background-color: rgba(0,0,0,.6);
-    /* background blending (multiply "overlays" the images)*/
-    background-blend-mode: multiply;
-    /*
-    background size property set to take the image and expand as much
-    as possible without growing bigger than the image 
-    */ 
-    background-size: cover;
-    /*Setting the bottom padding so Title isn't sitting on top of white-space */
-    padding-bottom: 50px;
+header {
+    position: relative;
+    height: 100%;
+    width: 100vw;
+    transform-style: preserve-3d;
+    z-index: -1;
 }
+
+.background {
+    width: 100vw;
+}
+
+
+
+
+
 
 
 
@@ -102,7 +172,7 @@ html, body{
     text-align: center;
     /* heading elements like h1 all have margins: let the margins be 0 */
     margin: 0; 
-    font-size: 4em;
+    font-size: 1rem;
     /* changing the everything tag's font set on the heading to be different  */
     font-family: Sound Wave;
     /*
@@ -116,7 +186,7 @@ html, body{
 
 
 .band-name-large {
-    font-size: 5em;
+    font-size: 3rem;
 }
 
 .section-header {
@@ -438,7 +508,7 @@ html, body{
 
 .main-footer {
     /* Background color should be white */
-    background-color: #290133;
+    background-color: #000000;
 
     /* Anything else should be white */
     color: white;
