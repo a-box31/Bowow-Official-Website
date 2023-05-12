@@ -1,23 +1,4 @@
 
-
-
-
-window.onload = function() {
-     
-  window.addEventListener('scroll', function(e) {
-    if ( window.pageYOffset > 100 ) {
-        console.log( document.querySelector("nav-container") )
-    } else {
-        console.log( document.querySelector("nav-container") )
-    }
-  }); 
-  
-}
-
-
-
-
-
 const playerButton = document.querySelector('.player-button'), 
       audio = document.querySelector('audio'), 
       playIcon = `
@@ -82,8 +63,6 @@ function toggleSound () {
 
 soundButton.addEventListener('click', toggleSound);
 
-
-document.getElementsByClassName('')
 
 
 

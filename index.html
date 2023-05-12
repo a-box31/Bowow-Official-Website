@@ -13,8 +13,9 @@
         <!-- description of the page when searched for in -->
         <!-- google search results -->
         <meta name="description" content="Coming Soon: listen to Bowow's new single">
-        <link href="styles.css" rel="stylesheet" defer>
         <script src="index.js" defer></script>
+        <link href="styles.css" rel="stylesheet" defer>
+        <script src="nav.js"defer></script>
     </head>
 
 
@@ -22,37 +23,47 @@
 
     <body>
 
+        <!-- navigation bar fixed the top -->
+        <div id="navbar" class="nav-container" >
+            <div class="navigation">
+                <div class="logo">
+                    <div class="brand-container">
+                        <a href="#">
+                            <img  class = "nav-logo" src="../Images/Assets/profile_pic.JPG" style="width: 65px;">
+                        </a>
+                    </div>
+                    <div class="main-social">
+                        <a href="https://www.instagram.com/bowow_0923/">
+                            <img src="./Images/Socials/Instagram.png" style="height: 18px">
+                        </a>
+                        <a href="https://soundcloud.com/bowow2478">
+                            <img src="./Images/Socials/Sound Cloud.png" style="height: 18px">
+                        </a>
+                    </div>
+                </div>
+                <div class="navbar-links">
+                    <nav>
+                        <ul>
+                            <li>Home</li>
+                            <li>Services</li>
+                            <li>Network</li>
+                        </ul>
+                    </nav>
+                </div>  
+            </div>
+        </div>
+
+
         <div class="wrapper">
 
 
-            <!-- navigation bar fixed the top -->
-            <div class="nav-container">
-                <div class="navigation">
-                    <div class="logo">
-                        <a href="#">
-                            <img  class = "nav-logo" src="../Images/Assets/profile_pic.JPG" style="width: 50px;">
-                        </a>
-                    </div>
-                    <div class="navbar-links">
-                        <nav>
-                            <ul>
-                                <li>Home</li>
-                                <li>Services</li>
-                                <li>Network</li>
-                            </ul>
-                        </nav>
-                    </div>  
-                </div>
-            </div>
-
-
-
-            
             <header>
+
                 <img class="background" src="../Images/Assets/sound-wave.gif" alt="Background">
+                <img class="foreground" src="../Images/Assets/foreground.png" alt="Foreground">
+                <h1>Design, Experience, Enjoy</h1>
+
             </header>
-
-
 
 
             <div class="content-area">
@@ -60,7 +71,6 @@
                 <section class="title-section">
                     <div class="band-name band-name-large no-highlight"> Bowow </div>
                 </section>
-
                 
                 <!-- section element to partition related elements-->
                 <section class="content-section container no-highlight">
@@ -180,7 +190,7 @@
                     </ul>
                 </div>
             </footer>
-
+            
         </div>
 
     </body>

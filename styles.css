@@ -29,7 +29,7 @@ If loading from a computer:
 
 
 
-
+/* general styles */
 * {
     /* 
     size of elements are determined by padding, margin, and content 
@@ -50,7 +50,7 @@ html, body{
     some html elements have default paddings
     these were removed to make the heading look better
     */
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
 
     margin: 0;
@@ -60,26 +60,37 @@ html, body{
 }
 
 
-.wrapper {
-    height: 100vh;
-    overflow-y: auto;
-    overflow-x: hidden;
-    perspective: 10px;
-}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* navigation styling */
 
 .nav-container {
     margin: 0 auto;
     height: 100px;
     width: 100vw;
     z-index: 13;
-    position: sticky;
+    position: fixed;
     top: 0;
 
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    
+    transition: background-color 0.7s ease-out;
+
+    /* background-color: black; */
 }
 
 .navigation {
@@ -92,12 +103,21 @@ html, body{
     align-items: center;
 
     width: 50%;
-    margin-left: 5%;
+    margin-left: 2%;
 }
 
-.logo img {
+.brand-container {
+    margin-right: 6%;
+}
+
+.nav-logo {
     border-radius: 100%;
     border: solid 2px gray;
+}
+
+.main-social a {
+    margin-right: 20px;
+    text-decoration: none;
 }
 
 .navbar-links {
@@ -125,10 +145,7 @@ html, body{
     margin: 0 auto;
     text-align: center;
     list-style: none;
-}
-
-.is-scrolling {
-    background-color: none transparent;
+    color: white;
 }
 
 
@@ -139,25 +156,112 @@ html, body{
 
 
 
+
+/* Page Structure */
+
+.wrapper {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    perspective: 10px;
+    background-color: black;
+}
 
 
 /* HEADER STYLING */
 /* -------------------------------------------------------------------------- */
-header {
+
+
+header{
     position: relative;
-    height: 100%;
-    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
     transform-style: preserve-3d;
+    z-index: -1;
+
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.background {
+    transform: translateZ(-20px) scale(3) translateY(100px);
+}
+
+.foreground{
+    transform: translateZ(-7px) translateY(300px);
+    object-position: 0%;
+}
+
+.background,
+.foreground {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
     z-index: -1;
 }
 
-.background {
-    width: 100vw;
+.foreground{
+    object-fit: contain;
+}
+
+
+header h1 {
+    font-family: 'Oswald', sans-serif;
+    padding: 5%;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 5px;
+    text-shadow: 0 0 5px rgb(0, 0, 0);
 }
 
 
 
+/* CONTENT AREA */
+/* -------------------------------------------------------------------------- */
+.content-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
 
+.title-section {
+    background-color: #21003b;
+}
+
+.content-section {
+    /* differentiates the section from the previous header*/
+    margin: 1em;
+}
+
+.container {    
+    /* 
+    Sets a max width on the section, meaning if the screen grows too large it
+    will not out grow 900px
+    */
+    max-width: 800px;
+
+    /* 
+    margin for top and bottom set to zero
+    
+    auto-set the left and right margins for better fitting 
+    (ie. centers the text to the screen)
+    */
+    /* margin: 0 auto; */
+
+    /* 
+    ensures that even if the page is as small as possible there is a padding
+    to prevent the text from hugging the edge
+    */
+    padding: 0 1.5em;
+}
 
 
 
@@ -196,55 +300,6 @@ header {
     color: #333;
     text-align: center;
     font-size: 2.5em;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* CONTENT AREA */
-/* -------------------------------------------------------------------------- */
-
-.content-area {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.content-section {
-    /* differentiates the section from the previous header*/
-    margin: 1em;
-}
-
-.container {    
-    /* 
-    Sets a max width on the section, meaning if the screen grows too large it
-    will not out grow 900px
-    */
-    max-width: 800px;
-
-    /* 
-    margin for top and bottom set to zero
-    
-    auto-set the left and right margins for better fitting 
-    (ie. centers the text to the screen)
-    */
-    /* margin: 0 auto; */
-
-    /* 
-    ensures that even if the page is as small as possible there is a padding
-    to prevent the text from hugging the edge
-    */
-    padding: 0 1.5em;
 }
 
 
