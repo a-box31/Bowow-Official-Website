@@ -1,0 +1,244 @@
+<div class="track-player-container">
+    <div class="player-container">
+        <div class="album">
+            <div class="audio-player">
+                <div class="song-header">Cocktail Beach</div>
+                <div class="icon-container">
+                    <img class="audio-icon" src="/Images/Covers/cocktail_beach_cover.jpg" alt="Cocktail Beach">
+                    <audio src="/Songs/Cocktail_Beach.mp3"></audio>
+                </div>
+                <div class="controls">
+                    <button class="player-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#3D3132">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                    <input type="range" class="timeline" max="100" value="0">
+                    <button class="sound-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#3D3132">
+                            <path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM14.657 2.929a1 1 0 011.414 0A9.972 9.972 0 0119 10a9.972 9.972 0 01-2.929 7.071 1 1 0 01-1.414-1.414A7.971 7.971 0 0017 10c0-2.21-.894-4.208-2.343-5.657a1 1 0 010-1.414zm-2.829 2.828a1 1 0 011.415 0A5.983 5.983 0 0115 10a5.984 5.984 0 01-1.757 4.243 1 1 0 01-1.415-1.415A3.984 3.984 0 0013 10a3.983 3.983 0 00-1.172-2.828 1 1 0 010-1.415z" clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="track-container">
+        <h3 class="tracklist-title">Tracklist</h3>
+        <ul class="track-list">
+            <li>
+                <img src="./Images/Covers/cocktail_beach_cover.jpg">
+                <div class="song-header">Cocktail Beach</div>
+            </li>
+            <li>
+                <img src="./Images/Covers/Bounce.jpg">
+                <div class="song-header">Bounce</div>
+            </li>
+            <li>
+                <img src="./Images/Covers/summer_drip_cover.jpg">
+                <div class="song-header">Summer Drip</div>
+            </li>
+        </ul>
+    </div>
+</div> 
+
+
+
+
+
+
+
+
+
+/* SONG SECTION */
+/* -------------------------------------------------------------------------- */
+
+.track-player-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* audio player */
+.player-container {
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: start;
+
+    width: 50%;
+    /* background-color: orange; */
+    /* padding: 40px; */
+    /* margin: 30px; */
+}
+
+.album {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* background-color: #65007e; */
+    padding: 10px;
+    margin: 10px;
+}
+
+
+.audio-player{
+    width: 15rem;
+    height: 300px;
+    /* background-color: red; */
+}
+
+
+.icon-container {
+    width: 200px;
+    height: 190px;
+    background-color: #290133;
+    color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.audio-icon {
+    width: 90%;
+    height: 100%;
+}
+
+
+
+.audio-player {
+    --player-button-width: 3em;
+    padding: 20px;
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+    
+.player-button {
+    background-color: transparent;
+    border: 0;
+    width: var(--player-button-width);
+    height: var(--player-button-width);
+    cursor: pointer;
+    padding: 0;
+}
+
+.timeline {
+    -webkit-appearance: none;
+    width: calc(100% - var(--player-button-width));
+    height: .5em;
+    background-color: #e5e5e5;
+    border-radius: 5px;
+    background-size: 0% 100%;
+    background-image: linear-gradient(#33003f, #33003f);
+    background-repeat: no-repeat;
+}
+
+
+.timeline::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0;
+    transition: all .1s;
+    background-color: #65007e;
+}
+
+.timeline::-webkit-slider-thumb:hover {
+    background-color: #33003f;
+}
+
+.timeline:hover::-webkit-slider-thumb {
+    opacity: 1;
+}
+
+.timeline::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+}
+
+.audio-player {
+    --player-button-width: 3em;
+    --sound-button-width: 2em;
+    --space: .5em;
+    padding-bottom: 100px;
+}
+
+.timeline {
+    width: calc(100% - (var(--player-button-width) + var(--sound-button-width) + var(--space)));
+    margin-right: var(--space);
+}
+
+.sound-button {
+    background-color: transparent;
+    border: 0;
+    width: var(--sound-button-width);
+    height: var(--sound-button-width);
+    cursor: pointer;
+    padding: 0;
+}
+
+
+
+/* track list */
+
+.track-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.tracklist-title{
+
+}
+
+.track-list {
+    margin: 0;
+    list-style-type: none;
+}
+
+.track-list li {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    margin: 10px;
+    padding: 5px;
+    background-color: #21003b;
+}
+
+.track-list li:hover {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    margin: 10px;
+    padding: 5px;
+    background-color: #34005b;
+    transform: scale(1.1);
+}
+
+.track-list img {
+    height: 50px;
+    padding-right: 10px;
+}
+
+
+
+
