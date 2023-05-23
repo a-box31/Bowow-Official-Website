@@ -91,6 +91,10 @@ html, body{
     font-size: 8rem;
 }
 
+.band-name-medium {
+    font-size: 4rem;
+}
+
 
 header h1 {
     font-family: 'Oswald', sans-serif;
@@ -664,7 +668,7 @@ header{
 }
 
 .discord-card{
-    width: 90%;
+    width: 80%;
     height: 300px;
     background-color: rgb(255, 255, 255);
     box-shadow: 1px 1px 10px rgb(211, 211, 211);
@@ -675,7 +679,7 @@ header{
 }
 
 .card-desc {
-    width: 70%;
+    width: 80%;
     padding: 30px ;
 }
 
@@ -695,6 +699,7 @@ header{
 .start-btn {
     border: none;
     outline: none;
+    font-weight: bolder;
     /* padding: 50px 50px 50px 50px; */
 
     height: 30px;
@@ -739,9 +744,30 @@ header{
 
 .bio-container {
     display: flex;
-    height: 500px;
+    justify-content: space-between;
+    /* align-items: flex-end; */
+    height: 600px;
+
+
+    padding: 0px;
+    margin: 0px;
+    /* background-color: orange; */
 }
 
+.bio-desc {
+    width: 50%;
+    height: 100%;
+    padding: 70px;
+
+    /* background-color: red; */
+}
+
+.bio-img {
+    /* width: 55%; */
+    height: 100%;
+    width: 50%;
+    background-color: yellow;
+}
 
 .about-logo-image {
     /* 
@@ -750,14 +776,14 @@ header{
     entire page wraps around it
     image removes itself from the flow and "floats" left of the page
     */
-    float: left;
+    /* float: left; */
 
     /* Setting the height and width of the images */
-    height: 200px;
-    width: 200px;
+    /* height: 200px; */
+    /* width: 200px; */
 
     /* setting a little margin so the text doesn't hug the picture*/
-    margin: 15px;
+    /* margin: 15px; */
 
     /*
     making the image rounded so the it sticks out more
@@ -772,6 +798,9 @@ header{
     be seen as a circle 
     */
     /* border: 3px solid ; */
+    /* height: 100%; */
+
+    width: 100%;
 }
 
 
