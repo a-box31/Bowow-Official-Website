@@ -92,6 +92,79 @@ html, body{
 }
 
 
+header h1 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 5px;
+    text-shadow: 0 0 5px rgb(0, 0, 0);
+    margin: 0 10%;
+}
+
+header h2 {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #fff;
+    letter-spacing: 3px;
+    text-shadow: 0 0 5px rgb(0, 0, 0);
+    margin: 0 10%;
+}
+
+
+.separator {
+    border-color: #ffffff;
+    border-style: solid;
+    width: 32px;
+    border-bottom-width: 6px;
+    margin-top: 25px;
+    margin-bottom: 18px;
+}
+
+.section-header {
+    /* Styles the section element with font, weight, color, position, and size */
+    font-family: Russo One;
+    font-weight: normal;
+    color: #ffffff;
+    text-align: left;
+    font-size: 2em;
+}
+
+.section-header1 {
+    /* Styles the section element with font, weight, color, position, and size */
+    font-family: Russo One;
+    font-weight: normal;
+    color: #ffffff;
+    text-align: left;
+    font-size: 2.5em;
+}
+
+.section-header2 {
+    /* Styles the section element with font, weight, color, position, and size */
+    font-family: Russo One;
+    font-weight: normal;
+    color: #000000;
+    text-align: left;
+    font-size: 2.5em;
+}
+
+.card-header {
+    font-family: Russo One;
+    font-weight: bold;
+    color: #000000;
+    text-align: left;
+    font-size: 2em;
+    margin-bottom: 18px;
+}
+
+.desc-text {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.contact-text {
+    color: white;
+    font-size: 1em;
+}
 
 
 
@@ -272,27 +345,6 @@ header{
     /* background-color: #290133; */
 }
 
-header h1 {
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    color: #fff;
-    letter-spacing: 5px;
-    text-shadow: 0 0 5px rgb(0, 0, 0);
-    margin: 0 10%;
-}
-
-header h2 {
-    font-family: 'PT Sans', sans-serif;
-    font-size: 20px;
-    text-transform: capitalize;
-    color: #fff;
-    letter-spacing: 3px;
-    text-shadow: 0 0 5px rgb(0, 0, 0);
-    margin: 0 10%;
-}
-
-
-
 
 
 
@@ -321,8 +373,12 @@ header h2 {
     background-color: #ffffff;
 }
 
+.bg-offwhite {
+    background-color: #f5f5f5;
+}
+
 .bg-transparent {
-    background-color: rgba(37, 24, 0, 0.9);
+    background-color: rgba(27, 18, 0, 0.9);
 }
 
 .content-section {
@@ -358,32 +414,6 @@ header h2 {
     /* background-color: rgb(157, 255, 0); */
 }
 
-.separator {
-    border-color: #ffffff;
-    border-style: solid;
-    width: 32px;
-    border-bottom-width: 6px;
-    margin-top: 25px;
-    margin-bottom: 18px;
-}
-
-.section-header1 {
-    /* Styles the section element with font, weight, color, position, and size */
-    font-family: Russo One;
-    font-weight: normal;
-    color: #ffffff;
-    text-align: left;
-    font-size: 2.5em;
-}
-
-.section-header2 {
-    /* Styles the section element with font, weight, color, position, and size */
-    font-family: Russo One;
-    font-weight: normal;
-    color: #000000;
-    text-align: left;
-    font-size: 2.5em;
-}
 
 
 
@@ -426,14 +456,17 @@ header h2 {
     margin: 0;
     padding: 0 10px;
     
-    outline: none;
+    /* outline: none; */
     border: none;
     transition: background-color 0.2s linear;
+    background-color: rgb(120, 120, 120);
+    color:rgb(0, 0, 0);
 }
 
 .network-btn:hover {
     background-color: #000000;
     color: orange;
+    cursor: pointer;
 }
 
 
@@ -457,7 +490,9 @@ header h2 {
     flex-direction: column;
     justify-content: center;
 
-    height: 600px;
+    height: auto;
+    padding: 100px 0;
+
     max-width: 90%;
     min-width: 70%;
 }
@@ -474,13 +509,18 @@ header h2 {
 .song {
     cursor: pointer;
     height: auto;
-    width: 230px;
+    width: 250px;
     position: relative;
     overflow: hidden;
     text-align: center;
 
-    margin: 15px;
+    margin: 30px;
     box-shadow: 0px 0px 10px orange;
+}
+
+.song:hover {
+    box-shadow: 0px 8px 10px orange;
+    transition: box-shadow 150ms ease-out;
 }
 
 .song .fadedbox {
@@ -575,19 +615,112 @@ header h2 {
 
 .contact-container{
     height: 250px;
-    width: 100%;
+    width: 70%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
+
+.separator-long {
+    border-color: rgba(128, 128, 128, 0.5);
+    border-style: solid;
+    width: 100%;
+    border-bottom-width: 3px;
+    margin-top: 25px;
+    margin-bottom: 18px;
+}
+
+.discord-btn {
+    height: 20%;
+    width: 100%;
+    text-align: right;
+}
+
+.discord-btn i:hover{
+    color: orange;
+    transition: all 0.2s ease;
+}
+
+
+
+
+
+
+
+
+
 
 .discord-container {
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
 
-    height: 400px;
+    height: 390px;
     width: 100%;
 }
+
+.discord-card{
+    width: 90%;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 10px rgb(211, 211, 211);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-desc {
+    width: 70%;
+    padding: 30px ;
+}
+
+
+.card-btn {
+    width: 100%;
+    height: 100px;
+    padding: 7px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    /* background-color: red; */
+}
+
+.start-btn {
+    border: none;
+    outline: none;
+    /* padding: 50px 50px 50px 50px; */
+
+    height: 30px;
+    width: 120px;
+
+    background-color: black;
+    color: white;
+}
+
+
+.card-img{
+    width: 50%;
+    height: 100%;
+    /* margin: 10px; */
+
+    text-align: end;
+    /* background-color: red; */
+}
+
+.card-img img {
+    height: 100%;
+}
+
+
+
+
 
 
 .general-container {
@@ -598,8 +731,17 @@ header h2 {
 
 
 
+
+
+
 /* PORTFOLIO SECTION */
 /* -------------------------------------------------------------------------- */
+
+.bio-container {
+    display: flex;
+    height: 500px;
+}
+
 
 .about-logo-image {
     /* 
@@ -623,13 +765,13 @@ header h2 {
     Since the image is square, 50% is the side that is shortest, taking that 
     it will vector out a circle
     */
-    border-radius: 50%;
+    /* border-radius: 50%; */
 
     /* 
     creating a border around the circle so that the white-background image can
     be seen as a circle 
     */
-    border: 3px solid ;
+    /* border: 3px solid ; */
 }
 
 
