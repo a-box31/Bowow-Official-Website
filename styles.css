@@ -831,25 +831,20 @@ header{
 /* IMAGES */
 .gallery {
     height: 400px;
-    padding: 0;
-    margin-top: 1em;
-    
+    width: 98vw;    
 
-    background-color: red;
-}
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 10px 10px;
 
-.images-scroll {
-    height: 100%;
-    padding-top: 1em 0;
-    overflow: auto;
     white-space: nowrap;
 
-    background-color: olive;
+    /* background-color: olive; */
 }
 
 
 
-.images-scroll img {
+.gallery img {
     height: 100%;
 }
 
