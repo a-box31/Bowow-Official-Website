@@ -163,6 +163,7 @@ header h2 {
 
 .desc-text {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(189, 189, 189);
 }
 
 .contact-text {
@@ -170,8 +171,14 @@ header h2 {
     font-size: 1em;
 }
 
-
-
+.no-highlight {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
 
 
 
@@ -182,9 +189,11 @@ header h2 {
 /* navigation styling */
 
 .nav-container {
-    margin: 0 0;
     height: 100px;
     width: 100vw;
+    margin: 0;
+    padding: 0 1em;
+
     z-index: 13;
     position: sticky;
     top: 0;
@@ -709,6 +718,10 @@ header{
     color: white;
 }
 
+.start-btn:hover {
+    background-color: rgb(240, 156, 0);
+}
+
 
 .card-img{
     width: 50%;
@@ -728,8 +741,13 @@ header{
 
 
 
+
+
+
+
+
 .general-container {
-    height: 500px;
+    height: 400px;
 }
 
 
@@ -810,6 +828,40 @@ header{
 
 
 
+/* IMAGES */
+.gallery {
+    height: 400px;
+    padding: 0;
+    margin-top: 1em;
+    
+
+    background-color: red;
+}
+
+.images-scroll {
+    height: 100%;
+    padding-top: 1em 0;
+    overflow: auto;
+    white-space: nowrap;
+
+    background-color: olive;
+}
+
+
+
+.images-scroll img {
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -822,12 +874,13 @@ header{
 .main-footer {
     /* Background color should be white */
     background-color: #000000;
+    /* background-color: red; */
 
     /* Anything else should be white */
     color: white;
 
     /* padding should be for top and bottom */
-    padding: 1em 0;
+    padding: 1em 1em;
     width: 100%;
 }
 
@@ -902,11 +955,8 @@ header{
     background-color: rgba(255,255,255,.3);
 }
 
-.no-highlight {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
+
+
+
+
+
