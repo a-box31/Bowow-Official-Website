@@ -291,11 +291,25 @@ header h2 {
     background-repeat: no-repeat;
 }
 
+.wrapper::-webkit-scrollbar {
+    background: rgb(0, 0, 0, 0.5);
+    /* background-color: transparent; */
+}
 
+.wrapper::-webkit-scrollbar-button {
+    /* background: rgb(88, 88, 88); */
+    /* border-radius: 10px; */
+    /* color: white; */
+    display: hidden;
+}
 
-
-
-
+.wrapper::-webkit-scrollbar-thumb {
+    /* background: coral; */
+    background-color: rgb(96, 96, 96);
+    border: solid black 1px;
+    padding: 10px;
+    border-radius: 10px;
+}
 
 
 
@@ -848,7 +862,25 @@ header{
     height: 100%;
 }
 
+.gallery::-webkit-scrollbar {
+    background: rgb(0, 0, 0, 0.5);
+    /* background-color: transparent; */
+}
 
+.gallery::-webkit-scrollbar-button {
+    /* background: rgb(88, 88, 88); */
+    /* border-radius: 10px; */
+    /* color: white; */
+    display: hidden;
+}
+
+.gallery::-webkit-scrollbar-thumb {
+    /* background: coral; */
+    background-color: rgb(96, 96, 96);
+    border: solid black 1px;
+    padding: 10px;
+    border-radius: 10px;
+}
 
 
 
