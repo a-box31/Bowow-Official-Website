@@ -27,7 +27,7 @@ If loading from a computer:
 
 @font-face {
     font-family: Sound Wave;
-    src: url("../Fonts/Sound_Wave_Font.ttf") format('truetype');
+    src: url("./Fonts/Sound_Wave_Font.ttf") format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -285,7 +285,7 @@ header h2 {
 
     perspective: 10px;
     /* background-color: rgb(153, 0, 255); */
-    background-image: url(../Images/Assets/sound-wave2.gif);
+    background-image: url(./Images/Assets/sound-wave2.gif);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -845,11 +845,11 @@ header{
 /* IMAGES */
 .gallery {
     height: 400px;
-    width: 98vw;    
+    width: 100vw;    
 
     overflow-x: scroll;
     overflow-y: hidden;
-    padding: 10px 10px;
+    padding: 1em 1em;
 
     white-space: nowrap;
 
@@ -868,10 +868,10 @@ header{
 }
 
 .gallery::-webkit-scrollbar-button {
-    /* background: rgb(88, 88, 88); */
+    background: rgba(88, 88, 88, 0.5);
     /* border-radius: 10px; */
     /* color: white; */
-    display: hidden;
+    /* display: hidden; */
 }
 
 .gallery::-webkit-scrollbar-thumb {
