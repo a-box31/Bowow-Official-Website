@@ -529,7 +529,7 @@ header{
     min-width: 70%;
 }
 
-.songs-container{
+.songs-container {
     /* display: flex;
     justify-content: space-between;
     flex-wrap: wrap; */
@@ -539,16 +539,19 @@ header{
 
     display: grid;
     grid-template-columns: repeat(4, 250px);
-    grid-gap: 30px;
+    grid-auto-rows: 250px;
+    grid-gap: 60px;
 
-    background-color: red;
+    justify-content: center;
+    align-items: center;
+
+    /* background-color: red; */
 }
 
 .song {
     cursor: pointer;
     height: auto;
-    width: 250px;
-    height: 250px;
+    width: 100%;
     position: relative;
     overflow: hidden;
     text-align: center;
@@ -587,7 +590,7 @@ header{
     text-align: left;
 }
 
-.song:hover .fadedbox{
+.song:hover .fadedbox {
     opacity: 0.8;
 }
 
@@ -635,7 +638,7 @@ header{
     -webkit-transform: translateY(0px);
 }
 
-.song img{
+.song img {
     width: 100%;
 }
 
@@ -654,7 +657,7 @@ header{
 
 
 
-.contact-container{
+.contact-container {
     height: 250px;
     width: 70%;
 
@@ -679,7 +682,7 @@ header{
     text-align: right;
 }
 
-.discord-btn i:hover{
+.discord-btn i:hover {
     color: orange;
     transition: all 0.2s ease;
 }
@@ -1000,8 +1003,120 @@ header{
 
 
 
+@media ( max-width: 1200px ) {
+    
+    .songs-container{
+        /* display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap; */
+
+        width: 100%;  
+        margin: 30px 0; 
+
+        display: grid;
+        grid-template-columns: repeat( 4, 250px);
+        grid-gap: 50px;
+
+        justify-content: center;
+        align-content: center;
+
+        background-color: black;
+    }
 
 
-@media ( screen ) {
+    .song {
+        cursor: pointer;
+        height: auto;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+
+        /* margin: 30px; */
+        box-shadow: 0px 0px 10px orange;
+
+        background-color: white;
+    }
+
+
+
+}
+
+@media ( max-width: 1000px ) {
+    
+    .songs-container{
+        /* display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap; */
+
+        width: 100%;  
+        margin: 30px 0; 
+
+        display: grid;
+        grid-template-columns: repeat( 2, 250px);
+        grid-gap: 60px;
+
+        justify-content: center;
+        align-content: center;
+
+        background-color: black;
+    }
+
+
+    .song {
+        cursor: pointer;
+        height: auto;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+
+        /* margin: 30px; */
+        box-shadow: 0px 0px 10px orange;
+
+        background-color: white;
+    }
+
+
+
+}
+
+@media ( max-width: 800px ) {
+    
+    .songs-container{
+        /* display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap; */
+
+        width: 100%;  
+        margin: 30px 0; 
+
+        display: grid;
+        grid-template-columns: repeat(2, 200px);
+        grid-auto-rows: 200px;
+        grid-gap: 40px;
+
+        justify-content: center;
+        align-content: center;
+
+        background-color: black;
+    }
+
+
+    .song {
+        cursor: pointer;
+        height: auto;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+
+        /* margin: 30px; */
+        box-shadow: 0px 0px 10px orange;
+
+        background-color: white;
+    }
+
+
 
 }
