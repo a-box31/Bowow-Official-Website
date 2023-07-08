@@ -5,127 +5,147 @@
 <!DOCTYPE html>
 
 <html lang="en">
+  <head>
+    <!-- title of the page when searched and in the tab-->
+    <title>Bowow - Official Website</title>
 
-    <head>
-        <!-- title of the page when searched and in the tab-->
-        <title>Bowow - Official Website</title>
+    <!-- description of the page when searched for in -->
+    <!-- google search results -->
+    <meta
+      name="description"
+      content="Coming Soon: listen to Bowow's new single"
+    />
+    <script src="index.js" defer></script>
+    <link href="styles.css" rel="stylesheet" defer />
+    <script src="nav.js" defer></script>
 
-        <!-- description of the page when searched for in -->
-        <!-- google search results -->
-        <meta name="description" content="Coming Soon: listen to Bowow's new single">
-        <script src="index.js" defer></script>
-        <link href="styles.css" rel="stylesheet" defer>
-        <script src="nav.js"defer></script>
+    <script
+      src="https://kit.fontawesome.com/9422a833ef.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
 
+    <!-- react cdn for practice only -->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      defer
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      defer
+    ></script>
+  </head>
 
-        <script src="https://kit.fontawesome.com/9422a833ef.js" crossorigin="anonymous" defer></script>
+  <body>
+    <div class="wrapper">
+      <!-- navigation bar fixed the top -->
+      <div id="navbar" class="nav-container">
+        <div class="navigation">
+          <div class="logo">
+            <div class="brand-container">
+              <a href="https://a-box31.github.io/Bowow-Official-Website/">
+                <img
+                  class="nav-logo"
+                  src="./Images/Assets/profile_pic.JPG"
+                  style="width: 65px"
+                />
+              </a>
+            </div>
+            <div class="main-social">
+              <a href="https://www.instagram.com/bowow_0923/">
+                <img
+                  src="./Images/Socials/Instagram.png"
+                  style="height: 18px"
+                />
+              </a>
+              <a href="https://soundcloud.com/bowow2478">
+                <img
+                  src="./Images/Socials/Sound Cloud.png"
+                  style="height: 18px"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="navbar-links">
+            <nav>
+              <ul>
+                <li>Home</li>
+                <li>Discography</li>
+                <li>Contact</li>
+                <li>Network</li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
 
-        <!-- react cdn for practice only -->
-        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js" defer></script>
-        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" defer></script>
-    </head>
+      <header>
+        <!-- <img class="background" src="../Images/Assets/sound-wave2.gif"> -->
+        <!-- <img class="foreground" src="../Images/Assets/foreground.png" alt="Foreground"> -->
+        <div class="title-container">
+          <div>
+            <h1 class="band-name band-name-large no-highlight">Bowow</h1>
+            <h2>Music Producer x DJ</h2>
+          </div>
+        </div>
+      </header>
 
+      <div class="content-area">
 
+        <section>
+          <div class="network">
+            <h1>Stay Up to Date and get Connected</h1>
+            <div>
+              <button class="network-btn">→ Join the Network</button>
+            </div>
+          </div>
+        </section>
 
+        <section class="content-section bg-black">
+          <div class="music-container container">
+            <div class="section-header1">Latest Albums / Singles</div>
+            <div class="separator"></div>
 
-    <body>
-
-        <div class="wrapper">
-
-
-            <!-- navigation bar fixed the top -->
-            <div id="navbar" class="nav-container" >
-                <div class="navigation">
-                    <div class="logo">
-                        <div class="brand-container">
-                            <a href="https://a-box31.github.io/Bowow-Official-Website/">
-                                <img  class = "nav-logo" src="./Images/Assets/profile_pic.JPG" style="width: 65px;">
-                            </a>
-                        </div>
-                        <div class="main-social">
-                            <a href="https://www.instagram.com/bowow_0923/">
-                                <img src="./Images/Socials/Instagram.png" style="height: 18px">
-                            </a>
-                            <a href="https://soundcloud.com/bowow2478">
-                                <img src="./Images/Socials/Sound Cloud.png" style="height: 18px">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="navbar-links">
-                        <nav>
-                            <ul>
-                                <li>Home</li>
-                                <li>Discography</li>
-                                <li>Contact</li>
-                                <li>Network</li>
-                            </ul>
-                        </nav>
-                    </div>  
+            <div class="songs-container">
+              <div class="song">
+                <img src="./Images/Covers/cocktail_beach.png" />
+                <div class="fadedbox">
+                  <div class="song-author song-text">Bowow</div>
+                  <div class="song-title song-text">Cocktail Beach</div>
                 </div>
+              </div>
+              <div class="song">
+                <img src="./Images/Covers/Swamped.jpg" />
+                <div class="fadedbox">
+                  <div class="song-author song-text">Bowow</div>
+                  <div class="song-title song-text">Swamped</div>
+                </div>
+              </div>
+              <div class="song">
+                <img src="./Images/Covers/8bit.png" />
+                <div class="fadedbox">
+                  <div class="song-author song-text">Bowow</div>
+                  <div class="song-title song-text">8-Bit</div>
+                </div>
+              </div>
+              <div class="song">
+                <img src="./Images/Covers/space-dust.png" />
+                <div class="fadedbox">
+                  <div class="song-author song-text">Bowow</div>
+                  <div class="song-title song-text">Space Dust</div>
+                </div>
+              </div>
             </div>
 
 
-            <header>
-                <!-- <img class="background" src="../Images/Assets/sound-wave2.gif"> -->
-                <!-- <img class="foreground" src="../Images/Assets/foreground.png" alt="Foreground"> -->
-                <div class="title-container">
-                    <h1 class="band-name band-name-large no-highlight"> Bowow </h1>
-                    <h2>Music Producer x DJ</h2>
-                </div>
-            </header>
+          </div>
+        </section>
 
-
-            <div class="content-area">
-
-                <section>
-                    <div class="network">
-                        <h1>Stay Up to Date and get Connected</h1>
-                        <div>
-                            <button class="network-btn">→ Join the Network</button>
-                        </div>
-                    </div>
-                </section>
-            
-                <section class="content-section bg-black">
-                    <div class="music-container container">
-                        <div class="section-header1">Latest Albums / Singles</div>
-                        <div class="separator"></div>
-                        <div class="songs-container">
-                            <div class="song">
-                                <img src="./Images/Covers/cocktail_beach.png">
-                                <div class="fadedbox">
-                                    <div class="song-author song-text">Bowow</div>
-                                    <div class="song-title song-text">Cocktail Beach</div>
-                                </div>
-                            </div>
-                            <div class="song">
-                                <img src="./Images/Covers/Swamped.jpg">
-                                <div class="fadedbox">
-                                    <div class="song-author song-text">Bowow</div>
-                                    <div class="song-title song-text">Swamped</div>
-                                </div>
-                            </div>
-                            <div class="song">
-                                <img src="./Images/Covers/8bit.png">
-                                <div class="fadedbox">
-                                    <div class="song-author song-text">Bowow</div>
-                                    <div class="song-title song-text">8-Bit</div>
-                                </div>
-                            </div>
-                            <div class="song">
-                                <img src="./Images/Covers/space-dust.png">
-                                <div class="fadedbox">
-                                    <div class="song-author song-text">Bowow</div>
-                                    <div class="song-title song-text">Space Dust</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- <section class="content-section bg-white">
+        <!-- <section class="content-section bg-white">
                     <div class="general-container container">
-
+                        
                     </div>
                 </section>
 
@@ -142,115 +162,125 @@
                 </section>
                 -->
 
-                <!-- <section class="content-section bg-white">
+        <!-- <section class="content-section bg-white">
                     <div class="general-container container">
 
                     </div>
                 </section>  -->
 
-                <section class="content-section bg-transparent">
-                    <div class="contact-container container">
-                        <div class="section-header">Music. Community. Boundless Possibilities.</div>
-                        <div class="separator-long"></div>
-                        <div class="contact-text desc-text">Join for the latest news, highlights and content.</div>
-                        <div class="discord-btn">
-                            <a href="https://discord.gg/pWtFKKsX7V">
-                                <span style="font-size: 48px;"><i id="discord-logo" class="fa-brands fa-discord"></i></span>
-                            </a>
-                        </div> 
-                    </div>
-                </section>
+        <section class="content-section bg-transparent">
+          <div class="contact-container container">
+            <div class="section-header">
+              Music. Community. Boundless Possibilities.
+            </div>
+            <div class="separator-long"></div>
+            <div class="contact-text desc-text">
+              Join for the latest news, highlights and content.
+            </div>
+            <div class="discord-btn">
+              <a href="https://discord.gg/pWtFKKsX7V">
+                <span style="font-size: 48px"
+                  ><i id="discord-logo" class="fa-brands fa-discord"></i
+                ></span>
+              </a>
+            </div>
+          </div>
+        </section>
 
-                <section class="content-section bg-offwhite">
-                    <div class="discord-container container">
-                        <div class="discord-card">
-                            <div class="card-desc">
-                                <div class="card-header">Interested in working together?</div>
-                                <div class="desc-text" style="color: rgb(0, 0, 0)">I am looking for partnerships and might be interested in working with you. Please fill out this form so we can connect.</div>
-                                <div class="card-btn">
-                                    <button class="start-btn">Get Started</button>
-                                </div>
-                            </div>
-                            <div class="card-img">
-                                <img src="./Images/Assets/musicians.png" alt="Icon">
-                            </div>
-                        </div>
-                    </div>
-                </section>
+        <section class="content-section bg-offwhite">
+          <div class="discord-container container">
+            <div class="discord-card">
+              <div class="card-desc">
+                <div class="card-header">Interested in working together?</div>
+                <div class="desc-text" style="color: rgb(0, 0, 0)">
+                  I am looking for partnerships and might be interested in
+                  working with you. Please fill out this form so we can connect.
+                </div>
+                <div class="card-btn">
+                  <button class="start-btn">Get Started</button>
+                </div>
+              </div>
+              <div class="card-img">
+                <img src="./Images/Assets/musicians.png" alt="Icon" />
+              </div>
+            </div>
+          </div>
+        </section>
 
+        <section class="content-section bg-black">
+          <div class="bio-container">
+            <div class="bio-desc">
+              <div class="band-name band-name-medium">Bowow</div>
+              <div class="separator"></div>
+              <div class="desc-text">
+                &nbsp;&nbsp; Inspired by creators such as Avicii, David Guetta,
+                Kygo, and Cash Cash, he created a unique brand of entertainment,
+                fusing melodic, vibing tunes with a variety of fun instrumentals
+                that will get you to be in high spirits. With an award winning
+                portfolio and a bright future, he continues to hone his music
+                production. He uses industry standard music DAWs, synthesizes
+                new sounds, and is in touch with up and coming artists to create
+                a unique feel for his music.
+              </div>
+              <br />
+              <div class="desc-text">
+                &nbsp;&nbsp; Bowow is a electronic music producer and DJ from
+                New City, New York. The solo creator started in 2016 as a
+                melodic, bass-boosted, EDM, fan going on to study music and
+                sound recording at the University of New Haven. Bowow's passion
+                for music and dedication to honing his craft led him to create
+                captivating and high-energy electronic tracks that resonate with
+                audiences.
+              </div>
+            </div>
+            <div class="bio-img">
+              <img class="about-logo-image" src="./Images/Assets/bio-img.png" />
+            </div>
+          </div>
+        </section>
 
+        <section class="bg-black">
+          <div class="gallery">
+            <img src="./Images/Assets/img1.jpg" alt="Image1" />
+            <img src="./Images/Assets/img2.jpg" alt="Image2" />
+            <img src="./Images/Assets/img3.jpg" alt="Image3" />
+            <img src="./Images/Assets/img4.jpg" alt="Image4" />
+            <img src="./Images/Assets/img5.jpg" alt="Image5" />
+          </div>
+        </section>
 
-                <section class="content-section bg-black">
-                    <div class="bio-container">
-                        <div class="bio-desc">
-                            <div class="band-name band-name-medium">Bowow</div>
-                            <div class="separator"></div>
-                            <div class="desc-text"> 
-                                &nbsp;
-                                Inspired by creators such as Avicii, David Guetta, Kygo, and Cash 
-                                Cash, he created a unique brand of entertainment, fusing melodic, 
-                                vibing tunes with a variety of fun instrumentals that 
-                                will get you to be in high spirits. With an award winning 
-                                portfolio and a bright future, he continues to hone his music 
-                                production. He uses industry standard music DAWs, synthesizes 
-                                new sounds, and is in touch with up and coming artists to create 
-                                a unique feel for his music.
-                            </div>
-                            <br>
-                            <div class="desc-text">
-                                &nbsp;
-                                Bowow is a electronic music producer and DJ 
-                                from New City, New York. The solo creator started in 2016
-                                as a melodic, bass-boosted, EDM, fan going on to 
-                                study music and sound recording at the University of New Haven.
-                            </div>
-                        </div>
-                        <div class="bio-img">
-                            <img  class = "about-logo-image" src="./Images/Assets/bio-img.png">
-                        </div>
-                    </div>
-                </section>
-
-                <section class="bg-black">
-                    <div class="gallery">
-                        <img src="./Images/Assets/img1.jpg" alt="Image1">
-                        <img src="./Images/Assets/img2.jpg" alt="Image2">
-                        <img src="./Images/Assets/img3.jpg" alt="Image3">
-                        <img src="./Images/Assets/img4.jpg" alt="Image4">
-                        <img src="./Images/Assets/img5.jpg" alt="Image5">
-                    </div>
-                </section>
-
-                <footer class="main-footer">
-                    <div class="main-footer-container">
-                        <h3 class = "band-name no-highlight"> Bowow </h3>
-                        <ul class="nav footer-nav">
-                            <li class="no-highlight">
-                                <a href="https://www.youtube.com/channel/UCuXSuzae1gH6HCu9oUE9Z3g/featured">
-                                    <img src="./Images/Socials/Youtube.png">
-                                </a>
-                            </li>
-                            <li class="no-highlight">
-                                <a href="https://open.spotify.com/user/bowow_0923?si=6fedad7e452a4646">
-                                    <img src="./Images/Socials/Spotify.png">
-                                </a>
-                            </li>
-                            <li class="no-highlight">
-                                <a href="https://soundcloud.com/bowow2478">
-                                    <img src="./Images/Socials/Sound Cloud.png">
-                                </a>
-                            </li>
-                            <li class="no-highlight">
-                                <a href="https://www.instagram.com/bowow_0923/">
-                                    <img src="./Images/Socials/Instagram.png">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </footer>
-
-
-            </div>            
-        </div>
-    </body>
+        <footer class="main-footer">
+          <div class="main-footer-container">
+            <h3 class="band-name no-highlight">Bowow</h3>
+            <ul class="nav footer-nav">
+              <li class="no-highlight">
+                <a
+                  href="https://www.youtube.com/channel/UCuXSuzae1gH6HCu9oUE9Z3g/featured"
+                >
+                  <img src="./Images/Socials/Youtube.png" />
+                </a>
+              </li>
+              <li class="no-highlight">
+                <a
+                  href="https://open.spotify.com/user/bowow_0923?si=6fedad7e452a4646"
+                >
+                  <img src="./Images/Socials/Spotify.png" />
+                </a>
+              </li>
+              <li class="no-highlight">
+                <a href="https://soundcloud.com/bowow2478">
+                  <img src="./Images/Socials/Sound Cloud.png" />
+                </a>
+              </li>
+              <li class="no-highlight">
+                <a href="https://www.instagram.com/bowow_0923/">
+                  <img src="./Images/Socials/Instagram.png" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
 </html>

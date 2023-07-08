@@ -34,7 +34,6 @@ If loading from a computer:
 
 
 
-
 /* general styles */
 * {
     /* 
@@ -50,6 +49,8 @@ If loading from a computer:
     font-family: Russo One;
     color: #777;
 }
+
+
 
 html, body{
     /*
@@ -314,6 +315,10 @@ header h2 {
 
 
 
+
+
+
+
 /* HEADER STYLING */
 /* -------------------------------------------------------------------------- */
 
@@ -525,24 +530,33 @@ header{
 }
 
 .songs-container{
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap; */
 
-    width: 100%;
-    margin: 30px 0;
+    width: 100%;  
+    margin: 30px 0; 
+
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    grid-gap: 30px;
+
+    background-color: red;
 }
 
 .song {
     cursor: pointer;
     height: auto;
     width: 250px;
+    height: 250px;
     position: relative;
     overflow: hidden;
     text-align: center;
 
-    margin: 30px;
+    /* margin: 30px; */
     box-shadow: 0px 0px 10px orange;
+
+    background-color: white;
 }
 
 .song:hover {
@@ -842,6 +856,9 @@ header{
 
 
 
+
+
+
 /* IMAGES */
 .gallery {
     height: 400px;
@@ -855,8 +872,6 @@ header{
 
     /* background-color: olive; */
 }
-
-
 
 .gallery img {
     height: 100%;
@@ -987,3 +1002,6 @@ header{
 
 
 
+@media ( screen ) {
+
+}
