@@ -467,19 +467,26 @@ header{
     font-family: Russo-One;
 
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.network div {
-    height: 100%;
-    margin: 0 10px;
-}
-
-.network h1{
+.network-msg{
     color: white;
     text-shadow: 1px 1px 1px black;
     font-size: 20px;
+
+    margin: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.network-btn-container {
+    height: 100%;
+    margin: 0 10px;
 }
 
 .network-btn{
@@ -538,8 +545,8 @@ header{
     margin: 30px 0; 
 
     display: grid;
-    grid-template-columns: repeat(4, 250px);
-    grid-auto-rows: 250px;
+    grid-template-columns: repeat(4, 230px);
+    grid-auto-rows: 230px;
     grid-gap: 60px;
 
     justify-content: center;
@@ -550,7 +557,7 @@ header{
 
 .song {
     cursor: pointer;
-    height: auto;
+    height: 100%;
     width: 100%;
     position: relative;
     overflow: hidden;
@@ -1003,19 +1010,32 @@ header{
 
 
 
+
+
+
+
+
+
+
+
+
+
 @media ( max-width: 1200px ) {
     
     .songs-container{
-        /* display: flex;
+        /* 
+        display: flex;
         justify-content: space-between;
-        flex-wrap: wrap; */
+        flex-wrap: wrap; 
+        */
 
         width: 100%;  
         margin: 30px 0; 
 
         display: grid;
-        grid-template-columns: repeat( 4, 250px);
-        grid-gap: 50px;
+        grid-template-columns: repeat( 4, 200px);
+        grid-auto-rows: 200px;
+        grid-gap: 30px;
 
         justify-content: center;
         align-content: center;
@@ -1026,7 +1046,7 @@ header{
 
     .song {
         cursor: pointer;
-        height: auto;
+        height: 100%;
         width: 100%;
         position: relative;
         overflow: hidden;
@@ -1053,7 +1073,8 @@ header{
         margin: 30px 0; 
 
         display: grid;
-        grid-template-columns: repeat( 2, 250px);
+        grid-template-columns: repeat( 2, 300px);
+        grid-auto-rows: 300px;
         grid-gap: 60px;
 
         justify-content: center;
@@ -1065,7 +1086,7 @@ header{
 
     .song {
         cursor: pointer;
-        height: auto;
+        height: 100%;
         width: 100%;
         position: relative;
         overflow: hidden;
@@ -1081,7 +1102,7 @@ header{
 
 }
 
-@media ( max-width: 800px ) {
+@media ( max-width: 750px ) {
     
     .songs-container{
         /* display: flex;
@@ -1092,20 +1113,18 @@ header{
         margin: 30px 0; 
 
         display: grid;
-        grid-template-columns: repeat(2, 200px);
-        grid-auto-rows: 200px;
-        grid-gap: 40px;
+        grid-template-columns: repeat(2, 250px);
+        grid-auto-rows: 250px;
+        grid-gap: 50px;
 
         justify-content: center;
         align-content: center;
-
-        background-color: black;
     }
 
 
     .song {
         cursor: pointer;
-        height: auto;
+        height: 100%;
         width: 100%;
         position: relative;
         overflow: hidden;
@@ -1115,6 +1134,121 @@ header{
         box-shadow: 0px 0px 10px orange;
 
         background-color: white;
+    }
+
+
+
+}
+
+
+@media ( max-width: 666px ) {
+
+    .band-name-large {
+        font-size: 3rem;
+    }
+
+    .band-desc {
+        font-size: 0.8rem;
+    }
+
+
+
+    .network {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .network-btn-container{
+        width: 50%;
+        margin: 5px;
+    }
+
+    .network-btn{
+        min-height: 40px;
+        width: 100%;
+    }
+
+
+    .songs-container{
+        /* 
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap; 
+        */
+
+        width: 100%;  
+        margin: 30px 0; 
+
+        display: grid;
+        grid-template-columns: repeat(2, 200px);
+        grid-auto-rows: 200px;
+        grid-gap: 50px;
+
+        justify-content: center;
+        align-content: center;
+    }
+
+
+    .song {
+        cursor: pointer;
+        height: 100%;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+
+        /* margin: 30px; */
+        box-shadow: 0px 0px 10px orange;
+
+        background-color: white;
+    }
+
+}
+
+
+@media ( max-width: 530px ) {
+    
+    .songs-container{
+        /* display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap; */
+
+        width: 100%;  
+        margin: 30px 0; 
+
+        display: grid;
+        grid-template-columns: 300px;
+        grid-auto-rows: 300px;
+        grid-gap: 50px;
+
+        justify-content: center;
+        align-content: center;
+    }
+
+
+    .song {
+        cursor: pointer;
+        height: 100%;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+
+        /* margin: 30px; */
+        box-shadow: 0px 0px 10px orange;
+
+        background-color: white;
+    }
+
+}
+
+
+
+@media ( max-width: 430px ) {
+    
+    .network-msg{
+        font-size: 15px;
+        margin: 5px;
     }
 
 
