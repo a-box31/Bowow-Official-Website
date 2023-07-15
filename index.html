@@ -6,6 +6,8 @@
 
 <html lang="en">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta charset="UTF-8"/>
     <!-- title of the page when searched and in the tab-->
     <title>Bowow - Official Website</title>
 
@@ -15,8 +17,10 @@
       name="description"
       content="Coming Soon: listen to Bowow's new single"
     />
+
+
     <!-- <script src="index.js" defer></script> -->
-    <link href="styles.css" rel="stylesheet" defer />
+    <link href="styles.css" rel="stylesheet" defer/>
     <script src="nav.js" defer></script>
 
     <script
@@ -40,7 +44,6 @@
 
   <body>
     <div class="wrapper">
-
 
       <!-- navigation bar fixed the top -->
       <div id="navbar" class="nav-container">
@@ -80,6 +83,11 @@
               </ul>
             </nav>
           </div>
+
+          <button class="hamburger">
+              <div class="bar"></div>
+          </button>
+          
         </div>
       </div>
 
@@ -114,11 +122,13 @@
 
             <div class="songs-container">
               <div class="song">
-                <img src="./Images/Covers/cocktail_beach.png" />
-                <div class="fadedbox">
-                  <div class="song-author song-text">Bowow</div>
-                  <div class="song-title song-text">Cocktail Beach</div>
-                </div>
+                <a href="song.html">
+                  <img src="./Images/Covers/cocktail_beach.png"/>
+                  <div class="fadedbox">
+                    <div class="song-author song-text">Bowow</div>
+                    <div class="song-title song-text">Cocktail Beach</div>
+                  </div>
+                </a>
               </div>
               <div class="song">
                 <img src="./Images/Covers/Swamped.jpg" />
