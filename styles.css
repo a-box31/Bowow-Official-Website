@@ -1140,16 +1140,21 @@ header{
         border-radius: 5px;
     }
 
-    .hamburger.is-active:before {
-        transform: translate(0px, 11px) rotate(-45deg);
+    .hamburger .bar{
+        width: 80%;
+    }
+    .hamburger:after {
+        width: 50%;
+    }
+
+    .hamburger.is-active .bar,
+    .hamburger.is-active:before,
+    .hamburger.is-active:after {
+        width: 100%;
     }
 
     .hamburger.is-active:after {
-        transform: translate(0px, -11px) rotate(45deg);
-    }
-
-    .hamburger.is-active .bar {
-        opacity: 0;
+        width: 100%;
     }
     
     .songs-container{
