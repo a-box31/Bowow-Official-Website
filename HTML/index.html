@@ -6,8 +6,8 @@
 
 <html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
     <!-- title of the page when searched and in the tab-->
     <title>Bowow - Official Website</title>
 
@@ -18,11 +18,10 @@
       content="Coming Soon: listen to Bowow's new single"
     />
 
-
     <!-- <script src="index.js" defer></script> -->
-    <link href="styles.css" rel="stylesheet" defer/>
-    <script src="nav.js" defer></script>
-    <script src="index.js" defer></script>
+    <link href="/Styles/index.css" rel="stylesheet"/>
+    <script src="/Scripts/nav.js" defer></script>
+    <script src="/Scripts/index.js" defer></script>
 
     <script
       src="https://kit.fontawesome.com/9422a833ef.js"
@@ -46,51 +45,73 @@
   <body>
     <div class="wrapper">
 
+
+
       <!-- navigation bar fixed the top -->
-      <div id="navbar" class="nav-container">
-        <div class="navigation">
-          <div class="logo">
-            <div class="brand-container">
-              <a href="https://a-box31.github.io/Bowow-Official-Website/">
-                <img
-                  class="nav-logo"
-                  src="./Images/Assets/profile_pic.JPG"
-                  style="width: 65px"
-                />
-              </a>
+      <div class="nav-system">
+
+        <div id="navbar" class="nav-container">
+
+          <div class="navigation">
+            <div class="logo">
+              <div class="brand-container">
+                <a href="https://a-box31.github.io/Bowow-Official-Website/">
+                  <img
+                    class="nav-logo"
+                    src="/Assets/Images/profile_pic.JPG"
+                    style="width: 65px"
+                  />
+                </a>
+              </div>
+              <div class="main-social">
+                <a href="https://www.instagram.com/bowow_0923/">
+                  <img
+                    src="/Assets/Socials/Instagram.png"
+                    style="height: 18px"
+                  />
+                </a>
+                <a href="https://soundcloud.com/bowow2478">
+                  <img
+                    src="/Assets/Socials/Sound Cloud.png"
+                    style="height: 18px"
+                  />
+                </a>
+              </div>
             </div>
-            <div class="main-social">
-              <a href="https://www.instagram.com/bowow_0923/">
-                <img
-                  src="./Images/Socials/Instagram.png"
-                  style="height: 18px"
-                />
-              </a>
-              <a href="https://soundcloud.com/bowow2478">
-                <img
-                  src="./Images/Socials/Sound Cloud.png"
-                  style="height: 18px"
-                />
-              </a>
+            <div class="navbar-links">
+              <nav>
+                <ul>
+                  <li>Home</li>
+                  <li>Discography</li>
+                  <li>Contact</li>
+                  <li>Network</li>
+                </ul>
+              </nav>
             </div>
-          </div>
-          <div class="navbar-links">
-            <nav>
-              <ul>
-                <li>Home</li>
-                <li>Discography</li>
-                <li>Contact</li>
-                <li>Network</li>
-              </ul>
-            </nav>
           </div>
 
           <button class="hamburger">
-              <div class="bar"></div>
+            <div class="bar"></div>
           </button>
           
         </div>
+
+        <div id="mobile-nav" class="mobile-container">
+          <nav class="mobile-links">
+            <ul>
+              <li>Home</li>
+              <li>Discography</li>
+              <li>Contact</li>
+              <li>Network</li>
+            </ul>
+          </nav>
+        </div>
+
       </div>
+
+
+
+
 
 
       <header>
@@ -105,7 +126,6 @@
       </header>
 
       <div class="content-area">
-
         <section>
           <div class="network">
             <div class="network-msg">Stay Up to Date and get Connected</div>
@@ -116,15 +136,14 @@
         </section>
 
         <section class="content-section bg-black">
-
           <div class="music-container container">
             <div class="section-header1">Latest Albums / Singles</div>
             <div class="separator"></div>
 
             <div class="songs-container">
               <div class="song">
-                <a href="song.html">
-                  <img src="./Images/Covers/cocktail_beach.png"/>
+                <a href="/HTML/songs/song.html">
+                  <img src="/Assets/Covers/cocktail_beach.png" />
                   <div class="fadedbox">
                     <div class="song-author song-text">Bowow</div>
                     <div class="song-title song-text">Cocktail Beach</div>
@@ -132,28 +151,27 @@
                 </a>
               </div>
               <div class="song">
-                <img src="./Images/Covers/Swamped.jpg" />
+                <img src="/Assets/Covers/Swamped.jpg" />
                 <div class="fadedbox">
                   <div class="song-author song-text">Bowow</div>
                   <div class="song-title song-text">Swamped</div>
                 </div>
               </div>
               <div class="song">
-                <img src="./Images/Covers/8bit.png" />
+                <img src="/Assets/Covers/8bit.png" />
                 <div class="fadedbox">
                   <div class="song-author song-text">Bowow</div>
                   <div class="song-title song-text">8-Bit</div>
                 </div>
               </div>
               <div class="song">
-                <img src="./Images/Covers/space-dust.png" />
+                <img src="/Assets/Covers/space-dust.png" />
                 <div class="fadedbox">
                   <div class="song-author song-text">Bowow</div>
                   <div class="song-title song-text">Space Dust</div>
                 </div>
               </div>
             </div>
-
           </div>
         </section>
 
@@ -193,9 +211,9 @@
             </div>
             <div class="discord-btn">
               <a href="https://discord.gg/pWtFKKsX7V">
-                <span style="font-size: 48px"
-                  ><i id="discord-logo" class="fa-brands fa-discord"></i
-                ></span>
+                <span style="font-size: 48px">
+                  <i id="discord-logo" class="fa-brands fa-discord"></i> 
+                </span>
               </a>
             </div>
           </div>
@@ -215,7 +233,7 @@
                 </div>
               </div>
               <div class="card-img">
-                <img src="./Images/Assets/musicians.png" alt="Icon" />
+                <img src="/Assets/Images/musicians.png" alt="Icon" />
               </div>
             </div>
           </div>
@@ -248,18 +266,18 @@
               </div>
             </div>
             <div class="bio-img">
-              <img class="about-logo-image" src="./Images/Assets/bio-img.png" />
+              <img class="about-logo-image" src="/Assets/Images/bio-img.png" />
             </div>
           </div>
         </section>
 
         <section class="bg-black">
           <div class="gallery">
-            <img src="./Images/Assets/img1.jpg" alt="Image1" />
-            <img src="./Images/Assets/img2.jpg" alt="Image2" />
-            <img src="./Images/Assets/img3.jpg" alt="Image3" />
-            <img src="./Images/Assets/img4.jpg" alt="Image4" />
-            <img src="./Images/Assets/img5.jpg" alt="Image5" />
+            <img src="/Assets/Images/img1.jpg" alt="Image1" />
+            <img src="/Assets/Images/img2.jpg" alt="Image2" />
+            <img src="/Assets/Images/img3.jpg" alt="Image3" />
+            <img src="/Assets/Images/img4.jpg" alt="Image4" />
+            <img src="/Assets/Images/img5.jpg" alt="Image5" />
           </div>
         </section>
 
@@ -271,30 +289,31 @@
                 <a
                   href="https://www.youtube.com/channel/UCuXSuzae1gH6HCu9oUE9Z3g/featured"
                 >
-                  <img src="./Images/Socials/Youtube.png" />
+                  <img src="/Assets/Socials/Youtube.png" />
                 </a>
               </li>
               <li class="no-highlight">
                 <a
                   href="https://open.spotify.com/user/bowow_0923?si=6fedad7e452a4646"
                 >
-                  <img src="./Images/Socials/Spotify.png" />
+                  <img src="/Assets/Socials/Spotify.png" />
                 </a>
               </li>
               <li class="no-highlight">
                 <a href="https://soundcloud.com/bowow2478">
-                  <img src="./Images/Socials/Sound Cloud.png" />
+                  <img src="/Assets/Socials/Sound Cloud.png" />
                 </a>
               </li>
               <li class="no-highlight">
                 <a href="https://www.instagram.com/bowow_0923/">
-                  <img src="./Images/Socials/Instagram.png" />
+                  <img src="/Assets/Socials/Instagram.png" />
                 </a>
               </li>
             </ul>
           </div>
         </footer>
       </div>
+
     </div>
   </body>
 </html>
