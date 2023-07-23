@@ -20,7 +20,7 @@ If loading from a computer:
 
 @font-face {
   font-family: Sound Wave;
-  src: url("./Fonts/Sound_Wave_Font.ttf") format("truetype");
+  src: url("../Fonts/Sound_Wave_Font.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -334,7 +334,7 @@ header h2 {
 
   perspective: 10px;
   /* background-color: rgb(153, 0, 255); */
-  background-image: url(./Assets/Images/sound-wave2.gif);
+  background-image: url(../Assets/Images/sound-wave2.gif);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
