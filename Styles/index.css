@@ -54,12 +54,9 @@ body {
   padding: 0;
 
   overflow-x: hidden;
+
+  scroll-behavior: smooth;
 }
-
-
-
-
-
 
 /* TEXT STYLINGS */
 /* -------------------------------------------------------------------------- */
@@ -172,11 +169,6 @@ header h2 {
   user-select: none;
 }
 
-
-
-
-
-
 /* navigation styling */
 /* -------------------------------------------------------------------------- */
 
@@ -285,45 +277,35 @@ header h2 {
 }
 
 .mobile-links {
-    height: 40%;
-    margin-left: 30px;    
-    display: flex;
-    align-items: center;
+  height: 40%;
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
 }
 
-.mobile-links ul{
-    height: 80%;
-    list-style: none;
+.mobile-links ul {
+  height: 80%;
+  list-style: none;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .mobile-links li {
-    font-size: 20px;
-    color: #ffffff;
-    padding-left: 20px;
-    transition: color .1s;
+  font-size: 20px;
+  color: #ffffff;
+  padding-left: 20px;
+  transition: color 0.1s;
 }
 
 .mobile-links li:hover {
-    color: #777;
+  color: #777;
 }
-
-
-
 
 .mobile-is-active {
-    transform: translateX(0%);
+  transform: translateX(0%);
 }
-
-
-
-
-
-
-
 
 /* Page Structure */
 /* -------------------------------------------------------------------------- */
@@ -338,6 +320,8 @@ header h2 {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+
+  scroll-behavior: inherit;
 }
 
 .wrapper::-webkit-scrollbar {
@@ -358,11 +342,6 @@ header h2 {
   padding: 10px;
   border-radius: 10px;
 }
-
-
-
-
-
 
 /* HEADER STYLING */
 /* -------------------------------------------------------------------------- */
@@ -419,11 +398,6 @@ header {
   /* background-color: #290133; */
 }
 
-
-
-
-
-
 /* CONTENT AREA */
 /* -------------------------------------------------------------------------- */
 .content-area {
@@ -466,7 +440,7 @@ header {
   /* 
     Sets a max width on the section, meaning if the screen grows too large it
     will not out grow 900px
-    */
+  */
   max-width: 90%;
 
   /* 
@@ -514,17 +488,20 @@ header {
 
 .network-btn-container {
   height: 100%;
-  margin: 0 10px;
+  margin: 0 20px;
+  display: flex;
 }
 
 .network-btn {
   height: 100%;
   width: fit-content;
   margin: 0;
-  padding: 0 10px;
+  padding: 10px 10px;
 
   /* outline: none; */
-  border: none;
+  /* border: none; */
+  text-decoration: none;
+  text-align: center;
   transition: background-color 0.2s linear;
   background-color: rgb(120, 120, 120);
   color: rgb(0, 0, 0);
@@ -544,7 +521,7 @@ header {
   justify-content: center;
 
   height: auto;
-  padding: 100px 0;
+  padding: 100px 0 0 0;
 
   max-width: 90%;
   min-width: 70%;
@@ -664,8 +641,9 @@ header {
 }
 
 .contact-container {
-  height: 250px;
+  height: fit-content;
   width: 70%;
+  padding: 20px 0;
 
   display: flex;
   flex-direction: column;
@@ -766,12 +744,6 @@ header {
   height: 400px;
 }
 
-
-
-
-
-
-
 /* PORTFOLIO SECTION */
 /* -------------------------------------------------------------------------- */
 
@@ -835,11 +807,6 @@ header {
   width: 100%;
 }
 
-
-
-
-
-
 /* IMAGES */
 /* -------------------------------------------------------------------------- */
 .gallery {
@@ -878,13 +845,6 @@ header {
   padding: 10px;
   border-radius: 10px;
 }
-
-
-
-
-
-
-
 
 /* FOOTER STYLING */
 /* -------------------------------------------------------------------------- */
@@ -976,13 +936,12 @@ header {
 
 
 
-
-
-
-
-
-
 @media (max-width: 1200px) {
+
+  .section-header {
+    font-size: 1.7em;
+  }
+
   .songs-container {
     /* 
         display: flex;
@@ -1020,6 +979,8 @@ header {
 }
 
 @media (max-width: 1000px) {
+
+
   .songs-container {
     /* display: flex;
         justify-content: space-between;
@@ -1054,12 +1015,22 @@ header {
   }
 }
 
+@media (max-width: 850px) {
+
+  .section-header {
+    font-size: 1.5em;
+  }
+
+  .section-header1{
+    font-size: 2em;
+  }
+}
+
 @media (max-width: 750px) {
-  
   .navbar-links {
     display: none;
   }
-  
+
   .hamburger {
     display: inline;
     width: 40px;
@@ -1130,7 +1101,6 @@ header {
 
     background-color: white;
   }
-
 }
 
 @media (max-width: 666px) {
@@ -1188,6 +1158,17 @@ header {
     box-shadow: 0px 0px 10px orange;
 
     background-color: white;
+  }
+
+
+
+
+  .discord-btn {
+    height: 20%;
+    padding-top: 10px;
+    width: 100%;
+    text-align: center;
+    /* background-color: white; */
   }
 }
 
