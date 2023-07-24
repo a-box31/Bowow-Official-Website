@@ -2,7 +2,6 @@
 // NAVIGATION SCRIPT
 // -----------------------------------------------------------------------------
 const nav = document.getElementById('navbar');
-
 const wrapper = document.getElementsByClassName('wrapper')[0]
 
 
@@ -21,6 +20,13 @@ hamburger.addEventListener("click", () => {
     }else{
         hamburger.classList.add('is-active');
         mobileNav.classList.add("mobile-is-active");
+    }
+})
+
+window.addEventListener("resize", ()=>{
+    if ( window.innerWidth > 750 ) {
+        mobileNav.classList.remove("mobile-is-active");
+        hamburger.classList.remove("is-active");
     }
 })
 
