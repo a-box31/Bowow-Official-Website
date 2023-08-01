@@ -1,0 +1,27 @@
+{
+  "name": "bowow-official-website",
+  "version": "1.0.0",
+  "description": "Music Producer and DJ website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "devStart": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a-box31/Bowow-Official-Website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/a-box31/Bowow-Official-Website/issues"
+  },
+  "homepage": "https://github.com/a-box31/Bowow-Official-Website#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
