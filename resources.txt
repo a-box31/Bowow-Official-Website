@@ -1,0 +1,17 @@
+Creator:
+---
+Abox
+
+Description:
+---
+Deploying the Bowow website with node.js using the http server.
+
+Node.js basic resources to learn:
+---
+https://www.youtube.com/watch?v=OIBIXYLJjsI&list=PL4cUxeGkcC9jsz4LDYc6kv3ymONOKxwBU&index=2
+https://www.youtube.com/watch?v=DQD00NAUPNk&list=PL4cUxeGkcC9jsz4LDYc6kv3ymONOKxwBU&index=5
+https://www.youtube.com/watch?v=bdHE2wHT-gQ&list=PL4cUxeGkcC9jsz4LDYc6kv3ymONOKxwBU&index=5
+
+Technical resources to debug:
+---
+https://stackoverflow.com/questions/56608028/how-do-i-send-css-file-along-with-html-file
