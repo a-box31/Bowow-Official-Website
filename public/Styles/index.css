@@ -1033,7 +1033,8 @@ header {
 
   .hamburger {
     display: inline;
-    width: 40px;
+    width: 50px;
+    padding-right: 10px;
     cursor: pointer;
     position: sticky;
 
@@ -1060,7 +1061,7 @@ header {
     width: 80%;
   }
   .hamburger:after {
-    width: 50%;
+    width: 60%;
   }
 
   .hamburger.is-active .bar,
