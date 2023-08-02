@@ -764,11 +764,11 @@ header {
   display: flex;
   justify-content: space-between;
   /* align-items: flex-end; */
-  height: 600px;
+  max-height: 900px;
 
   padding: 0px;
   margin: 0px;
-  /* background-color: orange; */
+  background-color: orange;
 }
 
 .bio-desc {
