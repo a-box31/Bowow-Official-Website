@@ -7,7 +7,7 @@ const server = http.createServer((req, res) => {
     switch (req.url) {
       case "/":
         res.writeHead(200, { "Content-Type": "text/html" });
-        fs.createReadStream("./public/index.html").pipe(res);
+        fs.createReadStream("./public/HTML/index.html").pipe(res);
         break;
       case "/index.css":
         res.writeHead(200, { "Content-Type": "text/css" });
