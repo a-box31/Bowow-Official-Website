@@ -1,0 +1,26 @@
+[
+  {
+    "link": "./Discography/Cocktail_Beach",
+    "image": "./Assets/Covers/cocktail_beach.png",
+    "author": "Bowow",
+    "title": "Cocktail Beach"
+  },
+  {
+    "link": "./Discography/Swamped",
+    "image": "./Assets/Covers/Swamped.jpg",
+    "author": "Bowow",
+    "title": "Swamped"
+  },
+  {
+    "link": "./Discography/8-Bit",
+    "image": "./Assets/Covers/8bit.png",
+    "author": "Bowow",
+    "title": "8-Bit"
+  },
+  {
+    "link": "./Discography/Space_Dust",
+    "image": "./Assets/Covers/space-dust.png",
+    "author": "Bowow",
+    "title": "Space Dust"
+  }
+]

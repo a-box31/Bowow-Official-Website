@@ -1,44 +1,76 @@
-const http = require("http");
+const express = require("express");
+const path = require("path");
 const fs = require("fs");
 
-const server = http.createServer((req, res) => {
-  if (req.method == "GET") {
-    console.log("URL is " + req.url);
-    switch (req.url) {
-      case "/":
-        res.writeHead(200, { "Content-Type": "text/html" });
-        fs.createReadStream("./public/HTML/index.html").pipe(res);
-        break;
-      case "/index.css":
-        res.writeHead(200, { "Content-Type": "text/css" });
-        fs.createReadStream("./public/Styles/index.css").pipe(res);
-        break;
-      case "/nav.js":
-        res.writeHead(200, { "Content-Type": "text/javascript" });
-        fs.createReadStream("./public/Scripts/nav.js").pipe(res);
-        break;
-      case "/index.js":
-        res.writeHead(200, { "Content-Type": "text/javascript" });
-        fs.createReadStream("./public/Scripts/index.js").pipe(res);
-        break;
-      case "/404":
-        res.writeHead(200, { "Content-Type": "text/html" });
-        fs.createReadStream("./public/HTML/404.html").pipe(res);
-        break;
-      case "/404.css":
-        res.writeHead(200, { "Content-Type": "text/css" });
-        fs.createReadStream("./public/Styles/404.css").pipe(res);
-        break;
-      default:
-        console.log("Failed to load " + req.url);
+const app = express();
+const PORT = 5050;
+
+// register the view engine and location
+app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "views"));
+
+
+
+
+// Send the Static Files in public
+app.use(express.static(path.join(__dirname, "public")));
+
+
+// Routing
+app.get("/", (req, res) => {  
+  fs.readFile(path.join(__dirname, "songs.json"), "utf8", (err, data) => {
+    if (err) throw err;
+    const songs = JSON.parse(data)
+    if(songs.length > 0){
+      res.render("index", { songs: songs });
+    }else{
+      res.render("404")
     }
-  }else{
-    console.log("Failed to load the " + req.method + " from " + req.url);
-  }
+  })
+});
+
+app.get("/Discography/Cocktail_Beach", (req, res) => {
+  res.render("song", {
+    title: "Cocktail Beach",
+    image: "/Assets/Covers/cocktail_beach.png",
+    song: "/Songs/Cocktail_Beach.mp3"
+  });
+});
+
+app.get("/Discography/Swamped", (req, res) => {
+  res.render("song", {
+    title: "Swamped",
+    image: "/Assets/Covers/Swamped.jpg",
+    song: "/Songs/Swamp.mp3"
+  });
+});
+
+app.get("/Discography/8-Bit", (req, res) => {
+  res.render("song", {
+    title: "8-Bit",
+    image: "/Assets/Covers/8bit.png",
+    song: "/Songs/8bit.mp3"
+  });
+});
+
+app.get("/Discography/Space_Dust", (req, res) => {
+  res.render("song", {
+    title: "Space_Dust",
+    image: "/Assets/Covers/space-dust.png",
+    song: "/Songs/space_dust.wav"
+  });
+});
+
+app.use((req, res) => {
+  // res.status(404).sendFile("./views/404.html", { root: __dirname });
+  res.redirect("/");
 });
 
 
 
-server.listen(3000, "localhost", () => {
-  console.log("listening at http://localhost:3000");
+
+// Start up the Server
+app.listen(PORT, (err) => {
+  if (err) console.log(err);
+  console.log(`Server at http://localhost:${PORT}`);
 });
