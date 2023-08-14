@@ -13,7 +13,18 @@ app.set("views", path.join(__dirname, "views"));
 
 
 // Send the Static Files in public
-app.use(express.static(path.join(__dirname, "public")));
+app.use( express.static( path.join(__dirname, "public") ) );
+
+
+app.use( (req, res, next) => {
+  console.log("New Request is Made:");
+  console.log("-".repeat(20))
+  console.log("hostname: " + req.hostname);
+  console.log("path:" + req.path );
+  console.log("method:" + req.method);
+  console.log("\n")
+  next();
+})
 
 
 // Routing
@@ -22,7 +33,7 @@ app.get("/", (req, res) => {
     if (err) throw err;
     const songs = JSON.parse(data)
     if(songs.length > 0){
-      res.render("index", { songs: songs });
+      res.render("index", { songs });
     }else{
       res.render("404")
     }
@@ -60,6 +71,10 @@ app.get("/Discography/Space_Dust", (req, res) => {
     song: "/Songs/space_dust.wav"
   });
 });
+
+app.get("/Discography", (req, res) => {
+  res.render("discography")
+})
 
 app.use((req, res) => {
   // res.status(404).sendFile("./views/404.html", { root: __dirname });
