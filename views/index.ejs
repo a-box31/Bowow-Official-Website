@@ -5,102 +5,14 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="UTF-8" />
-    <!-- title of the page when searched and in the tab-->
-    <title>Bowow - Official Website</title>
 
-    <!-- description of the page when searched for in -->
-    <!-- google search results -->
-    <meta
-      name="description"
-      content="Coming Soon: listen to Bowow's new single"
-    />
-
-    <!-- <script src="index.js" defer></script> -->
-    <link href="./Styles/index.css" rel="stylesheet" />
-    <script src="./Scripts/nav.js" defer></script>
-    <script src="./Scripts/index.js" defer></script>
-
-    <script
-      src="https://kit.fontawesome.com/9422a833ef.js"
-      crossorigin="anonymous"
-      defer
-    ></script>
-
-    <!-- react cdn for practice only -->
-    <script
-      crossorigin
-      src="https://unpkg.com/react@18/umd/react.development.js"
-      defer
-    ></script>
-    <script
-      crossorigin
-      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
-      defer
-    ></script>
-  </head>
+  <%- include('./partials/head.ejs') %>
 
   <body>
-    <div class="wrapper">
-      <!-- navigation bar fixed the top -->
-      <div class="nav-system">
-        <div id="navbar" class="nav-container">
-          <div class="navigation">
-            <div class="logo">
-              <div class="brand-container">
-                <a href="https://a-box31.github.io/Bowow-Official-Website/">
-                  <img
-                    class="nav-logo"
-                    src="./Assets/Images/profile_pic.JPG"
-                    style="width: 65px"
-                  />
-                </a>
-              </div>
-              <div class="main-social">
-                <a href="https://www.instagram.com/bowow_0923/">
-                  <img
-                    src="./Assets/Socials/Instagram.png"
-                    style="height: 18px"
-                  />
-                </a>
-                <a href="https://soundcloud.com/bowow2478">
-                  <img
-                    src="./Assets/Socials/Sound Cloud.png"
-                    style="height: 18px"
-                  />
-                </a>
-              </div>
-            </div>
-            <div class="navbar-links">
-              <nav>
-                <ul>
-                  <li>Home</li>
-                  <li>Discography</li>
-                  <li>Contact</li>
-                  <li>Network</li>
-                </ul>
-              </nav>
-            </div>
-          </div>
 
-          <button class="hamburger">
-            <div class="bar"></div>
-          </button>
-        </div>
-
-        <div id="mobile-nav" class="mobile-container">
-          <nav class="mobile-links">
-            <ul>
-              <li>Home</li>
-              <li>Discography</li>
-              <li>Contact</li>
-              <li>Network</li>
-            </ul>
-          </nav>
-        </div>
-      </div>
+    <div class="wrapper bg-wrap">
+      
+      <%- include('./partials/navigation.ejs') %>
 
       <header>
         <!-- <img class="background" src="../Images/Assets/sound-wave2.gif"> -->
@@ -111,6 +23,7 @@
             <h2 class="band-desc">Music Producer x DJ</h2>
           </div>
         </div>
+        
       </header>
 
       <div class="content-area">
@@ -130,7 +43,7 @@
 
             <div class="songs-container">
 
-              <% if( songs.length > 0 ){ %>
+              <% if( Array.isArray(songs) && songs.length > 0 ){ %>
                 <% songs.forEach( (song)=>{ %>
                   <div class="song">
                     <a href=<%=song.link%> >
@@ -143,49 +56,6 @@
                   </div>
                 <%})%>
               <%}%>
-
-<!-- 
-              <div class="song">
-                <a href="./Discography/Cocktail_Beach">
-                  <img src="./Assets/Covers/cocktail_beach.png"/>
-                  <div class="fadedbox">
-                    <div class="song-author song-text">Bowow</div>
-                    <div class="song-title song-text">Cocktail Beach</div>
-                  </div>
-                </a>
-              </div>
-
-              <div class="song">
-                <a href="./Discography/Swamped">
-                  <img src="./Assets/Covers/Swamped.jpg" />
-                  <div class="fadedbox">
-                    <div class="song-author song-text">Bowow</div>
-                    <div class="song-title song-text">Swamped</div>
-                  </div>
-                </a>
-              </div>
-
-              <div class="song">
-                <a href="./Discography/8-Bit">
-                  <img src="./Assets/Covers/8bit.png" />
-                  <div class="fadedbox">
-                    <div class="song-author song-text">Bowow</div>
-                    <div class="song-title song-text">8-Bit</div>
-                  </div>
-                </a>
-              </div>
-
-              <div class="song">
-                <a href="./Discography/Space_Dust">
-                  <img src="./Assets/Covers/space-dust.png" />
-                  <div class="fadedbox">
-                    <div class="song-author song-text">Bowow</div>
-                    <div class="song-title song-text">Space Dust</div>
-                  </div>
-                </a>
-              </div> 
--->
-
             </div>
           </div>
         </section>
@@ -292,39 +162,8 @@
           </div>
         </section>
 
-        <footer class="main-footer">
-          <div class="main-footer-container">
-            <h3 class="band-name no-highlight">Bowow</h3>
-            <ul class="nav footer-nav">
-              <li class="no-highlight">
-                <a
-                  href="https://www.youtube.com/channel/UCuXSuzae1gH6HCu9oUE9Z3g/featured"
-                >
-                  <img src="./Assets/Socials/Youtube.png" />
-                </a>
-              </li>
-              <li class="no-highlight">
-                <a
-                  href="https://open.spotify.com/user/bowow_0923?si=6fedad7e452a4646"
-                >
-                  <img src="./Assets/Socials/Spotify.png" />
-                </a>
-              </li>
-              <li class="no-highlight">
-                <a href="https://soundcloud.com/bowow2478">
-                  <img src="./Assets/Socials/Sound Cloud.png" />
-                </a>
-              </li>
-              <li class="no-highlight">
-                <a href="https://www.instagram.com/bowow_0923/">
-                  <img src="./Assets/Socials/Instagram.png" />
-                </a>
-              </li>
-            </ul>
-          </div>
-        </footer>
+        <%- include('./partials/footer.ejs') %>
 
-        
       </div>
     </div>
   </body>
