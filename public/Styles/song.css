@@ -1,3 +1,7 @@
+.player-container{
+    padding: 10px;
+}
+
 .album {
     display: flex;
     flex-direction: column;

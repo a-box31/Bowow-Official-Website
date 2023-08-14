@@ -100,6 +100,7 @@ header h2 {
   font-size: 20px;
   text-transform: capitalize;
   color: #fff;
+  
   letter-spacing: 3px;
   text-shadow: 0 0 5px rgb(0, 0, 0);
   margin: 0 10%;
@@ -227,29 +228,32 @@ header h2 {
   align-items: center;
 
   width: 50%;
-  /* background-color: #21003b; */
 }
 
 .navbar-links nav {
   width: 100%;
-  /* background-color: #57006d; */
 }
 
 .navbar-links ul {
   display: flex;
-
   height: 100%;
 }
 
 .navbar-links li {
-  width: 100px;
-  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  margin-right: 10px;
   text-align: center;
   list-style: none;
-  color: white;
 }
 
-.navbar-links li:hover {
+.navbar-links a {
+  text-decoration: none;
+  color: white;
+  font-size: auto;
+}
+
+.navbar-links a:hover {
   text-decoration: underline;
   color: rgb(139, 139, 139);
   cursor: pointer;
@@ -316,27 +320,32 @@ header h2 {
   overflow-x: hidden;
 
   perspective: 10px;
-  /* background-color: rgb(153, 0, 255); */
-  background-image: url(../Assets/Images/sound-wave2.gif);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 
   scroll-behavior: inherit;
 }
 
-.wrapper::-webkit-scrollbar {
+.bg-wrap {
+  background-image: url(../Assets/Images/sound-wave2.gif);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.wrapper::-webkit-scrollbar,
+.wrapper1::-webkit-scrollbar {
   background: rgb(0, 0, 0);
 }
 
-.wrapper::-webkit-scrollbar-button {
+.wrapper::-webkit-scrollbar-button,
+.wrapper1::-webkit-scrollbar-button {
   /* background: rgb(88, 88, 88); */
   /* border-radius: 10px; */
   /* color: white; */
   display: hidden;
 }
 
-.wrapper::-webkit-scrollbar-thumb {
+.wrapper::-webkit-scrollbar-thumb,
+.wrapper1::-webkit-scrollbar-thumb {
   /* background: coral; */
   background-color: rgb(96, 96, 96);
   border: solid black 1px;
@@ -867,6 +876,8 @@ header {
   /* padding should be for top and bottom */
   padding: 1em 1em;
   width: 100%;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .main-footer-container {
