@@ -22,5 +22,41 @@
     "image": "./Assets/Covers/space-dust.png",
     "author": "Bowow",
     "title": "Space Dust"
+  },
+  {
+    "link": "./Discography/Heart_Soul",
+    "image": "./Assets/Covers/H_S.png",
+    "author": "Bowow",
+    "title": "Heart & Soul"
+  },
+  {
+    "link": "./Discography/Raybeam",
+    "image": "./Assets/Covers/raybeam.png",
+    "author": "Bowow",
+    "title": "Raybeam"
+  },
+  {
+    "link": "./Discography/Speed_Way",
+    "image": "./Assets/Covers/speed_way.png",
+    "author": "Bowow",
+    "title": "Speed Way"
+  },
+  {
+    "link": "./Discography/From",
+    "image": "./Assets/Covers/From.png",
+    "author": "Bowow",
+    "title": "From"
+  },
+  {
+    "link": "./Discography/Stellar_Affection",
+    "image": "./Assets/Covers/stellar-affection.jpg",
+    "author": "Bowow",
+    "title": "Stellar Affection"
+  },
+  {
+    "link": "./Discography/Summer_Drip",
+    "image": "./Assets/Covers/summer_drip.png",
+    "author": "Bowow",
+    "title": "Summer Drip"
   }
 ]
