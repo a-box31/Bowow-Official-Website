@@ -2,29 +2,50 @@
 <html lang="en">
 
     <%- include('./partials/head.ejs') %>
+    <head>
+        <link rel="stylesheet" href="/Styles/discography.css" type="text/css" defer>
+    </head>
 
     <body>
 
         <div class="wrapper">
 
-            <%- include('./partials/navigation.ejs') %>
+            <%- include('./partials/navigation_fixed.ejs') %>
 
             <div class="content-area">
+
+                <section class="content-section bg-offwhite">
+                    <div class="path-container">
+                        <div class="path-align">
+                            <h2 class="path-name">Bowow / Discography</h2>
+                            <h1 class="page-title">Discography</h1>
+                        </div>
+                    </div>
+                </section>
+                
                 <section class="content-section bg-white">
-                    <div class="general-container container">
+                    <div class="page-container container">
+
+                        <div class="discography-container">
+                            
+                            <div class="disc-container">
+                                <% if( Array.isArray(songs) && songs.length > 0 ){ %>
+                                    <% songs.forEach( (song)=>{ %>
+                                        <div class="song">
+                                            <a href=<%=song.link%> >
+                                            <img src=<%=song.image%> defer/>
+                                            <div class="fadedbox">
+                                                <div class="song-author song-text"><%=song.author%></div>
+                                                <div class="song-title song-text"><%=song.title%></div>
+                                            </div>
+                                            </a>
+                                        </div>
+                                    <%})%>
+                                <%}%>
+                            </div> 
+                           
+                        </div>   
                         
-                    </div>
-                </section>
-
-                <section class="content-section bg-black">
-                    <div class="general-container container">
-
-                    </div>
-                </section>
-
-                <section class="content-section bg-white">
-                    <div class="general-container container">
-
                     </div>
                 </section>
 

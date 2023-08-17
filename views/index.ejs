@@ -14,16 +14,15 @@
       
       <%- include('./partials/navigation.ejs') %>
 
-      <header>
+      <header class="main-header">
         <!-- <img class="background" src="../Images/Assets/sound-wave2.gif"> -->
         <!-- <img class="foreground" src="../Images/Assets/foreground.png" alt="Foreground"> -->
-        <div class="title-container">
+        <div class="title-container bg-gradient">
           <div>
             <h1 class="band-name band-name-large no-highlight">Bowow</h1>
             <h2 class="band-desc">Music Producer x DJ</h2>
           </div>
         </div>
-        
       </header>
 
       <div class="content-area">
@@ -42,9 +41,8 @@
             <div class="separator"></div>
 
             <div class="songs-container">
-
-              <% if( Array.isArray(songs) && songs.length > 0 ){ %>
-                <% songs.forEach( (song)=>{ %>
+              <% if( Array.isArray(latest_songs) && latest_songs.length > 0 ){ %>
+                <% latest_songs.forEach( (song)=>{ %>
                   <div class="song">
                     <a href=<%=song.link%> >
                       <img src=<%=song.image%> defer/>
@@ -57,27 +55,17 @@
                 <%})%>
               <%}%>
             </div>
+
           </div>
         </section>
 
-        <!-- <section class="content-section bg-white">
-                    <div class="general-container container">
-                        
-                    </div>
-                </section>
+        <!--
+        <section class="content-section bg-white">
+            <div class="general-container container">
 
-                <section class="content-section bg-white">
-                    <div class="general-container container">
-
-                    </div>
-                </section>
-
-                <section class="content-section bg-white">
-                    <div class="general-container container">
-
-                    </div>
-                </section>
-                -->
+            </div>
+        </section>
+        -->
 
         <section id="network" class="content-section bg-black">
           <div style="height: 100px"></div>
