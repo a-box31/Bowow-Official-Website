@@ -32,12 +32,25 @@ app.get("/", (req, res) => {
   fs.readFile(path.join(__dirname, "songs.json"), "utf8", (err, data) => {
     if (err) throw err;
     const songs = JSON.parse(data)
-    if(songs.length > 0){
-      res.render("index", { songs });
+    if( songs.length >= 4 ){
+      latest_songs = songs.slice(0, 4);
+      res.render("index", { latest_songs });
     }else{
       res.render("404")
     }
   })
+});
+
+app.get("/Discography", (req, res) => {
+  fs.readFile(path.join(__dirname, "songs.json"), "utf8", (err, data) => {
+    if (err) throw err;
+    const songs = JSON.parse(data);
+    if (songs.length > 0) {
+      res.render("discography", { songs });
+    } else {
+      res.render("404");
+    }
+  });
 });
 
 app.get("/Discography/Cocktail_Beach", (req, res) => {
@@ -72,9 +85,53 @@ app.get("/Discography/Space_Dust", (req, res) => {
   });
 });
 
-app.get("/Discography", (req, res) => {
-  res.render("discography")
-})
+app.get("/Discography/Heart_Soul", (req, res) => {
+  res.render("song", {
+    title: "Heart & Soul",
+    image: "/Assets/Covers/H_S.png",
+    song: "/Songs/h_s.wav",
+  });
+});
+
+app.get("/Discography/Raybeam", (req, res) => {
+  res.render("song", {
+    title: "Raybeam",
+    image: "/Assets/Covers/raybeam.png",
+    song: "/Songs/raybeam.wav",
+  });
+});
+
+app.get("/Discography/Speed_Way", (req, res) => {
+  res.render("song", {
+    title: "Speed Way",
+    image: "/Assets/Covers/speed_way.png",
+    song: "/Songs/Speed_Way.mp3",
+  });
+});
+
+app.get("/Discography/From", (req, res) => {
+  res.render("song", {
+    title: "From",
+    image: "/Assets/Covers/From.png",
+    song: "/Songs/From.wav",
+  });
+});
+
+app.get("/Discography/Stellar_Affection", (req, res) => {
+  res.render("song", {
+    title: "Stellar Affection",
+    image: "/Assets/Covers/stellar-affection.jpg",
+    song: "/Songs/Stellar_Affection.mp3",
+  });
+});
+
+app.get("/Discography/Summer_Drip", (req, res) => {
+  res.render("song", {
+    title: "Summer Drip",
+    image: "/Assets/Covers/summer_drip.png",
+    song: "/Songs/Summer_Drip.mp3",
+  });
+});
 
 app.use((req, res) => {
   // res.status(404).sendFile("./views/404.html", { root: __dirname });
