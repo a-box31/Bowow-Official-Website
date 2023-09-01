@@ -182,7 +182,7 @@ header h2 {
 }
 
 .nav-fixed {
-/* 
+  /* 
   position: static;
   top: 0;
 */
@@ -426,8 +426,6 @@ header h2 {
   padding: 20px;
   /* background-color: #290133; */
 }
-
-
 
 /* CONTENT AREA */
 /* -------------------------------------------------------------------------- */
@@ -810,29 +808,32 @@ header h2 {
 /* -------------------------------------------------------------------------- */
 
 .bio-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto;
   justify-content: space-between;
-  max-height: 900px;
-  min-height: 600px;
+  height: fit-content;
   width: 100%;
 
   padding: 0px;
   margin: 0px;
+
   /* background-color: orange; */
 }
 
 .bio-desc {
-  width: 50%;
   height: 100%;
   padding: 90px 120px;
-  font-size: 23px;
+  font-size: clamp(17px, 20px, 23px);
+  background-color: aqua;
 }
 
 .bio-img {
-  max-width: 50%;
-  /* background-color: yellow; */
+  background-color: yellow;
   overflow: hidden;
   text-align: right;
+
+  display: flex;
+  justify-content: center;
 }
 
 .about-logo-image {
@@ -1019,9 +1020,7 @@ header h2 {
   }
 }
 
-
 @media (max-width: 1200px) {
-
   .songs-container {
     /* 
         display: flex;
@@ -1249,7 +1248,6 @@ header h2 {
 
 @media (max-width: 530px) {
   .songs-container {
-
     /* 
         display: flex;
         justify-content: space-between;
@@ -1284,7 +1282,6 @@ header h2 {
 }
 
 @media (max-width: 430px) {
-
   .songs-container {
     /* display: flex;
         justify-content: space-between;
@@ -1306,5 +1303,4 @@ header h2 {
     font-size: 15px;
     margin: 5px;
   }
-
 }
