@@ -154,7 +154,7 @@ header h2 {
 .desc-text {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: rgb(189, 189, 189);
-  transition: 1s linear;
+  /* transition: 1s linear; */
 }
 
 .contact-text {
@@ -811,20 +811,17 @@ header h2 {
   display: grid;
   grid-template-columns: auto auto;
   justify-content: space-between;
-  height: fit-content;
+  height: auto;
   width: 100%;
 
   padding: 0px;
   margin: 0px;
-
-  /* background-color: orange; */
 }
 
 .bio-desc {
   height: 100%;
   padding: 90px 120px;
-  font-size: clamp(17px, 20px, 23px);
-  background-color: aqua;
+  font-size: 23px;
 }
 
 .bio-img {
@@ -1086,6 +1083,28 @@ header h2 {
 
     background-color: white;
   }
+
+  .bio-container {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: space-between;
+    height: auto;
+    width: 100%;
+
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .bio-desc {
+    height: 100%;
+    padding: 40px 20px;
+    font-size: 15px;
+  }
+
+  .about-logo-image {
+    height: auto;
+    width: 100%;
+  }
 }
 
 @media (max-width: 850px) {
@@ -1183,6 +1202,19 @@ header h2 {
 @media (max-width: 666px) {
   .band-name-large {
     font-size: 3rem;
+  }
+
+  .band-name-medium {
+    font-size: 2.5rem;
+  }
+
+  .separator {
+    border-color: #ffffff;
+    border-style: solid;
+    width: 32px;
+    border-bottom-width: 4px;
+    margin-top: 25px;
+    margin-bottom: 18px;
   }
 
   .band-desc {
