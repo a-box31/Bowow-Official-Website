@@ -182,10 +182,8 @@ header h2 {
 }
 
 .nav-fixed {
-  /* 
-  position: static;
+  position: sticky;
   top: 0;
-*/
   margin: 0;
   z-index: 100;
 }
@@ -231,6 +229,8 @@ header h2 {
 
 .brand-container {
   margin-right: 6%;
+  filter: drop-shadow(5px 1px 5px orange);
+  transition: filter 0.7s ease-in;
 }
 
 .nav-logo {
@@ -241,6 +241,12 @@ header h2 {
 .main-social a {
   margin-right: 20px;
   text-decoration: none;
+  transition: all 0.1s;
+}
+
+.main-social a:hover {
+  /* filter: drop-shadow(16px 16px 20px red) invert(75%); */
+  filter: drop-shadow(3px 1px orange);
 }
 
 .navbar-links {
@@ -266,6 +272,7 @@ header h2 {
   margin-right: 10px;
   text-align: center;
   list-style: none;
+  transition: color 0.1s;
 }
 
 .navbar-links a {
@@ -318,15 +325,17 @@ header h2 {
   justify-content: space-around;
 }
 
-.mobile-links li {
+.mobile-links a {
   font-size: 20px;
   color: #ffffff;
   padding-left: 20px;
   transition: color 0.1s;
+  text-decoration: none;
 }
 
-.mobile-links li:hover {
+.mobile-links a:hover {
   color: #777;
+  text-decoration: underline;
 }
 
 .mobile-is-active {
@@ -1120,6 +1129,9 @@ header h2 {
 @media (max-width: 750px) {
   .navbar-links {
     display: none;
+  }
+  .logo {
+    width: 100%;
   }
 
   .hamburger {
