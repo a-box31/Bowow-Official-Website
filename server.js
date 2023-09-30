@@ -3,7 +3,7 @@ const path = require("path");
 const fs = require("fs");
 
 const app = express();
-const PORT = 5050;
+const PORT = 5000;
 
 // register the view engine and location
 app.set("view engine", "ejs");
@@ -142,7 +142,10 @@ app.use((req, res) => {
 
 
 // Start up the Server
-app.listen(PORT, (err) => {
-  if (err) console.log(err);
-  console.log(`Server at http://localhost:${PORT}`);
+app.listen( process.env.PORT || PORT, (err) => {
+  if (err) console.error(err);
+  console.log(
+    `Server at http://localhost:${PORT} 
+     or http://localhost:${process.env.PORT}`
+  );
 });
