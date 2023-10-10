@@ -120,7 +120,7 @@ app.get("/Discography/From", (req, res) => {
 app.get("/Discography/Stellar_Affection", (req, res) => {
   res.render("song", {
     title: "Stellar Affection",
-    image: "/Assets/Covers/stellar-affection.jpg",
+    image: "/Assets/Covers/Stellar_Affection.jpg",
     song: "/Songs/Stellar_Affection.mp3",
   });
 });
