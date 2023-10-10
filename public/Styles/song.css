@@ -1,3 +1,41 @@
+.path-container {
+  width: 100%;
+  height: 250px;
+
+  display: flex;
+  justify-content: center;
+
+  padding: 20px;
+  /* background-color: #290133; */
+}
+
+.path-align {
+  padding-top: 40px;
+  width: 1400px;
+  /* background-color: aqua; */
+}
+
+.path-name {
+  text-align: left;
+  font-size: 1.5rem;
+  font-family: Hind, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: darkgoldenrod;
+}
+
+.page-title {
+  text-align: left;
+  font-size: 4rem;
+  font-family: Hind, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: black;
+}
+
+
+
+
+
+
 .player-container{
     padding: 10px;
     margin-top: 10vh;

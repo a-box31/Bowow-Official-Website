@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <%- include('./partials/head.ejs') %>
+    
     <head>
         <link rel="stylesheet" href="/Styles/discography.css" type="text/css" defer>
+        <title>Bowow - Discography</title>
     </head>
+    <%- include('./partials/head.ejs') %>
 
     <body>
 
@@ -25,9 +27,7 @@
                 
                 <section class="content-section bg-white">
                     <div class="page-container container">
-
                         <div class="discography-container">
-                            
                             <div class="disc-container">
                                 <% if( Array.isArray(songs) && songs.length > 0 ){ %>
                                     <% songs.forEach( (song)=>{ %>
@@ -43,9 +43,7 @@
                                     <%})%>
                                 <%}%>
                             </div> 
-                           
                         </div>   
-                        
                     </div>
                 </section>
 

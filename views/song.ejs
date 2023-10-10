@@ -4,16 +4,18 @@
 
 
   
-  <%-include("./partials/head.ejs")%>
   
   <head>
     
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cocktail Beach</title>
+    <title>Bowow - <%=title%></title>
     <link rel="stylesheet" href="/Styles/song.css" />
     <script src="/Scripts/song.js" defer></script>
   </head>
+
+  <%-include("./partials/head.ejs")%>
+
 
   
   <body>
@@ -24,6 +26,15 @@
       <%-include("./partials/navigation_fixed.ejs")%>
 
       <div class="content-area">
+
+        <section class="content-section bg-offwhite">
+            <div class="path-container">
+                <div class="path-align">
+                    <h2 class="path-name">Bowow / Discography / <%=title%></h2>
+                    <h1 class="page-title"><%=title%></h1>
+                </div>
+            </div>
+        </section>
 
         <section class="content-section bg-white">
             <div class="page-container container">
