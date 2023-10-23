@@ -15,7 +15,6 @@ wrapper.addEventListener("scroll", () => {
 const hamburger = document.getElementsByClassName("hamburger")[0];
 const mobileNav = document.getElementById("mobile-nav");
 const brand = document.querySelector(".brand-container");
-const networkBtn = document.querySelector("#networkBtn");
 
 hamburger.addEventListener("click", () => {
   if (hamburger.classList.contains("is-active")) {
@@ -35,14 +34,16 @@ window.addEventListener("resize", () => {
   if (window.innerWidth > 750) {
     mobileNav.classList.remove("mobile-is-active");
     hamburger.classList.remove("is-active");
-    brand.style.Filter = "drop-shadow(5px 1px 5px orange)";
+    brand.style.filter = "drop-shadow(5px 1px 5px orange)";
   }
 });
 
-// networkBtn.onclick = () => {
-//   mobileNav.classList.remove("mobile-is-active");
-//   hamburger.classList.remove("is-active");
-//   brand.style.Filter = "drop-shadow(5px 1px 5px orange)";
-// };
+const mobileNetworkBtn = document.querySelector("#mobileNetworkBtn");
 
-// console.log(networkBtn);
+
+mobileNetworkBtn.onclick = () => {
+  mobileNav.classList.remove("mobile-is-active");
+  hamburger.classList.remove("is-active");
+  brand.style.filter = "drop-shadow(5px 1px 5px orange)";
+  console.log(brand.style)
+};
